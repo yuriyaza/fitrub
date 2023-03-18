@@ -1,27 +1,128 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fitrub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet" />
+    <link rel="icon" href="./images/favicon.ico">
+    <style>
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+    </style>
+    <link rel="stylesheet" href="./css/modern-normalize.min.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
+
   <body>
-    <header></header>
+    <header class="header" id="navigation">
+      <div class="container">
+        <div class="desktop-menu-bar">
+          <img class="logo" src="./images/logo-fitrub.jpg" width="110" height="50" alt="Логотип Fitrub" />
+          <nav class="desktop-navigation">
+            <ul class="menu-list">
+              <li class="menu-item">
+                <a class="menu-link" href="#hero">Головна</a>
+              </li>
+              <li class="menu-item">
+                <a class="menu-link" href="#products">Продукція</a>
+              </li>
+              <li class="menu-item">
+                <a class="menu-link" href="#contacts">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+          <button class="button button-buy" type="button">Купити</button>
+        </div>
+      </div>
+    </header>
+
     <main>
-      <section class="section hero-section">
-        <div class="container hero-container"></div>
+      <section class="section" id="hero">
+        <div class="container">
+          <div class="hero-wrapper">
+            <div class="hero-left-bar">
+              <h1 class="hero-title">FITRUB - це гумові кріплення</h1>
+              <p class="hero-descr">для легкого та швидкого монтажу, розбирання овальних та подібних до них предметів</p>
+              <button class="button button-hero-partner" type="button">Стати партнером</button>
+            </div>
+            <div class="hero-right-bar">
+              <img src="./images/features.gif" width="687" height="473" alt="Огляд можливостей" />
+            </div>
+          </div>
+        </div>
       </section>
-      <section class="section products-section">
-        <div class="container products-container"></div>
+      
+      <section class="section" id="products">
+        <div class="container">
+          <h2 class="products-title">ПРОДУКЦІЯ</h2>
+          <ul class="products-list">
+            <li>
+              <img src="./images/product-1.jpg" width="380" height="318" alt="Кріплення 1" />
+            </li>
+            <li>
+              <img src="./images/product-2.jpg" width="380" height="318" alt="Кріплення 2" />
+            </li>
+            <li>
+              <img src="./images/product-3.jpg" width="380" height="318" alt="Кріплення 3" />
+            </li>
+            <li>
+              <img src="./images/product-4.jpg" width="380" height="318" alt="Кріплення 4" />
+            </li>
+          </ul>
+          <div class="products-video"></div>
+        </div>
       </section>
-      <section class="section partners-section">
-        <div class="container partners-container"></div>
-      </section>
-      <section class="section contacts-section">
-        <div class="container contacts-container"></div>
+
+      <section class="section" id="partners">
+        <div class="container">
+          <div class="partners-wrapper">
+            <div class="partners-left-bar">
+              <h2 class="partners-title">НАШІ ПАРТНЕРИ</h2>
+              <a class="partners-shopcar-wrapper" href="https://shopcar.ua/" target="_blank">
+                <img class="partners-shopcar-logo" src="./images/logo-shopcar.png" width="98" height="98" alt="Логотип ShopCar" />
+                <div class="partners-shopcar-info">
+                  <h3 class="partners-shopcar-name">ShopCar</h3>
+                  <p class="partners-shopcar-descr">Мережа Магазинів Автозапчастин</p>
+                  <p class="partners-shopcar-link">shopcar.ua</p>
+                </div>
+              </a>
+            </div>
+            <div class="partners-right-bar">
+              <div class="partners-map">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2573.8232702479154!2d23.94256261530445!3d49.82698673997225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473ae744fbf174e1%3A0xeda7aa539715fea3!2zU2hvcENhciAtINCQ0LLRgtC-0LfQsNC_0YfQsNGB0YLQuNC90Lg!5e0!3m2!1sru!2sua!4v1679167741537!5m2!1sru!2sua"
+                  width="100%"
+                  height="100%"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+          <button class="button button-partner" type="button">Стати партнером</button>
+        </div>
       </section>
     </main>
-    <footer></footer>
+
+    <footer class="footer" id="contacts">
+      <div class="container">
+        <h2 class="contacts-title">КОНТАКТИ</h2>
+        <h3 class="contacts-company">FITRUB</h3>
+        <address class="contacts-address">
+          <a class="contacts-phone" href="tel:+380999999999">Тел.: +38 (099) 999-99-99</a>
+          <a class="contacts-mail" href="mailto:fitrub@ukr.net">E-mail: fitrub@ukr.net</a>
+          <p>вулиця Городоцька, 242, Львів</p>
+          <p>Львівська область, 79041</p>
+        </address>
+      </div>
+    </footer>
   </body>
 </html>
