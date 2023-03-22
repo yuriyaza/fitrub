@@ -1,8 +1,4 @@
 :root {
-  --color-black: #000000;
-  --color-white: #ffffff;
-  --color-blue: #001427;
-  --color-red: #b62e2c;
   --trans-rule: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   --trans-modal: 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -13,59 +9,9 @@ html {
 
 body {
   font-family: 'Inter', sans-serif;
-}
-
-.wrapper {
-  width: 320px;
-  min-height: 1800px;
-  margin: 0 auto;
-
-  background-image: url(../images/bg-top.png), url(../images/bg-bottom.png);
-  background-position: top center, bottom center;
-  background-repeat: no-repeat;
-
-  overflow: hidden;
-}
-
-@media (min-width: 460px) {
-  .wrapper {
-    width: 460px;
-  }
-}
-
-@media (min-width: 768px) {
-  .wrapper {
-    width: 768px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .wrapper {
-    width: 1200px;
-  }
-}
-
-@media (min-width: 1600px) {
-  .wrapper {
-    width: 1600px;
-  }
-}
-
-.container {
-  width: 1210px;
-  padding: 0 15px;
-  margin: 0 auto;
-}
-
-.hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+  font-size: 22px;
+  line-height: 27px;
+  background-color: #e3e3e3;
 }
 
 h1,
@@ -82,50 +28,86 @@ ul {
 }
 
 a {
-  display: block;
-  color: inherit;
   text-decoration: none;
+  color: #000000;
 }
 
 img {
   display: block;
-  /* width: 100%; */
-  /* height: auto; */
 }
 
-/* ============================================================= */
+/* ==================== Common classes ==================== */
+
+.body-wrapper {
+  width: 320px;
+  min-height: 1800px;
+  margin: 0 auto;
+
+  background-color: #ffffff;
+  background-image: url(../images/bg-top.png), url(../images/bg-bottom.png);
+  background-position: top center, bottom center;
+  background-repeat: no-repeat;
+
+  overflow: hidden;
+}
+
+@media (min-width: 460px) {
+  .body-wrapper {
+    width: 460px;
+  }
+}
+
+@media (min-width: 768px) {
+  .body-wrapper {
+    width: 768px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .body-wrapper {
+    width: 1200px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .body-wrapper {
+    width: 1600px;
+  }
+}
+
+.container {
+  width: 1210px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.title {
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 44px;
+}
+
+.hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
 .button {
-  color: var(--color-white);
-  cursor: pointer;
-  border: none;
+  display: inline-block;
   background: linear-gradient(to bottom, #b62f2c 5%, #8f2424 100%);
-
-  /* font: inherit; */
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
 }
 
-.button-buy {
-  padding: 10px 39px;
-  border-radius: 8px;
-}
-
-.button-hero-partner {
-  padding: 10px 38px;
-  border-radius: 28px;
-  font-weight: 800;
-  font-size: 36px;
-  line-height: 44px;
-}
-
-.button-partner {
-  font-weight: 800;
-  font-size: 36px;
-  line-height: 44px;
-  padding: 20px 117px;
-  border-radius: 40px;
-}
-
-.button:hover {
+.button:hover,
+.button:focus {
   background: linear-gradient(to bottom, #a32a2a 5%, #752020 100%);
 }
 
@@ -133,15 +115,15 @@ img {
   transform: translate(0, 1px);
 }
 
-/* ============================================================= */
+/* ==================== Header and menu ==================== */
 
 .header#navigation {
   position: fixed;
   width: inherit;
-  
-  background-color: var(--color-blue);
+  background-color: #001427;
+  color: #ffffff;
   opacity: 0.9;
-  color: var(--color-white);
+  z-index: 10;
 }
 
 .menu-desktop {
@@ -149,10 +131,6 @@ img {
   align-items: center;
   justify-content: space-between;
   padding: 40px 0;
-
-  font-weight: 800;
-  font-size: 21px;
-  line-height: 25px;
 }
 
 .menu-list {
@@ -160,32 +138,43 @@ img {
 }
 
 .menu-item:not(:last-child) {
-  margin-right: 175px;
+  margin-right: 150px;
 }
 
 .menu-link {
   padding: 12px 0;
-  display: block;
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 27px;
+  color: #ffffff;
 }
 
 .menu-link:hover {
-  color: lightgray;
+  color: #d3d3d3;
 }
 
-/* ============================================================= */
+.menu-button {
+  padding: 10px 38px;
+  border-radius: 8px;
+  font-weight: 800;
+  font-size: 21px;
+  line-height: 25px;
+}
+
+/* ==================== Hero section ==================== */
 
 .section#hero {
-  padding: 18px 0 155px 0;
-  color: var(--color-white);
+  padding-top: 148px;
+  padding-bottom: 108px;
+  color: #ffffff;
 }
 
 .hero-wrapper {
   display: flex;
-  justify-content: space-between;
 }
 
-.hero-left-bar {
-  padding: 73px 0 0 0;
+.hero-leftbar {
+  padding-top: 60px;
 }
 
 .hero-title {
@@ -195,49 +184,68 @@ img {
   line-height: 39px;
 }
 
-.hero-descr {
+.hero-description {
+  margin-bottom: 110px;
   font-weight: 700;
   font-size: 27px;
   line-height: 33px;
-  margin-bottom: 130px;
 }
 
-/* ============================================================= */
-
-.section#products {
-  padding: 60 0 0 0;
-  color: var(--color-black);
-  text-align: center;
-  scroll-margin-top: 107px;
+.hero-image {
+  width: 687px;
+  height: 473px;
 }
 
-.products-title {
-  margin-bottom: 38px;
+.hero-button {
+  padding: 12px 38px;
+  border-radius: 40px;
   font-weight: 800;
   font-size: 36px;
   line-height: 44px;
 }
 
+/* ==================== Products section ==================== */
+
+.section#products {
+  padding-top: 108px;
+  padding-bottom: 30px;
+  color: #000000;
+  text-align: center;
+  scroll-margin-top: 70px;
+}
+
+.products-title {
+  margin-bottom: 38px;
+}
+
+.products-wrapper {
+  margin-bottom: 40px;
+}
+
 .products-list {
-  margin-bottom: 26px;
   display: flex;
   flex-wrap: wrap;
-  gap: 36px 20px;
-  flex-basis: calc((100% - 40px) / 3);
+  margin: -18px -10px;
+}
+
+.products-item {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  margin: 18px 10px;
 }
 
 .products-video {
   /* розмір авто */
   width: 100%;
   height: 655px;
-  border: 1px solid var(--color-black);
+  border: 1px solid #d3d3d3;
 }
 
-/* ============================================================= */
+/* ==================== Partners section ==================== */
 
 .section#partners {
-  padding: 60px 0;
-  color: var(--color-black);
+  padding-top: 30px;
+  padding-bottom: 52px;
+  color: #000000;
   text-align: center;
 }
 
@@ -247,81 +255,105 @@ img {
   justify-content: space-between;
 }
 
+.partners-leftbar {
+  text-align: left;
+}
 .partners-title {
-  margin-bottom: 16px;
-  font-weight: 800;
-  font-size: 36px;
-  line-height: 44px;
+  margin-bottom: 32px;
 }
 
 .partners-shopcar-wrapper {
   display: flex;
+  align-items: center;
+  justify-content: left;
 }
 
 .partners-shopcar-logo {
-  margin-right: 19px;
+  margin-right: 12px;
 }
 
-.partners-shopcar-info {
-  width: 210px;
-  text-align: left;
-}
 .partners-shopcar-name {
   font-weight: 800;
   font-size: 29px;
   line-height: 35px;
 }
 
-.partners-shopcar-descr {
-  font-weight: 500;
+.partners-shopcar-description {
+  font-weight: 400;
   font-size: 22px;
   line-height: 27px;
-}
-
-.partners-shopcar-link {
-  font-weight: 500;
-  font-size: 29px;
-  line-height: 35px;
 }
 
 .partners-map {
   width: 580px;
   height: 580px;
-  border: 1px solid var(--color-black);
+  border: 1px solid #d3d3d3;
 }
 
-/* ============================================================= */
+.partners-button {
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 44px;
+  padding: 20px 117px;
+  border-radius: 40px;
+}
+
+/* ==================== Footer and contacts ==================== */
 
 .footer#contacts {
-  padding-top: 60px;
-  padding-bottom: 96px;
-  color: var(--color-white);
+  padding-top: 52px;
+  padding-bottom: 46px;
+  color: #ffffff;
+  text-align: center;
+  scroll-margin-top: 130px;
+}
 
-  /* можна параметризувати і нижче */
+.contacts-wrapper {
+  display: flex;
+  align-items: end;
+  margin-bottom: 50px;
+  text-align: left;
+}
+
+.contacts-leftbar {
+  margin-right: 155px;
+}
+
+.contacts-title {
+  margin-bottom: 32px;
+}
+
+.contacts-company {
+  margin-bottom: 19px;
   font-weight: 800;
   font-size: 29px;
   line-height: 35px;
 }
 
-.contacts-title {
-  margin-bottom: 32px;
-  font-weight: 800;
-  font-size: 36px;
-  line-height: 44px;
-}
-
 .contacts-address {
   font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 27px;
 }
 
-.contacts-company,
 .contacts-phone,
 .contacts-mail {
-  margin-bottom: 19px;
+  display: block;
+  margin-bottom: 28px;
+  color: #ffffff;
 }
 
-/* ============================================================= */
+.contacts-accent {
+  font-weight: 800;
+}
 
+.contacts-copyright {
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 27px;
+}
 
-
-
+.contacts-social-item:not(:last-child) {
+  margin-bottom: 19px;
+}
