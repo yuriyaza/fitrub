@@ -1,0 +1,22 @@
+{
+  "name": "fitrub",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "homepage": "https://github.com/yuriyaza/fitrub",
+  "scripts": {
+    "test": "echo \"No test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yuriyaza/fitrub.git"
+  },
+  "author": "Yuriy Aza",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yuriyaza/fitrub/issues"
+  },
+  "dependencies": {
+    "swiper": "^9.1.1"
+  }
+}
