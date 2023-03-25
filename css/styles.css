@@ -462,11 +462,11 @@ img {
 
 .swiper .swiper-button-prev {
   margin-left: 20px;
-  background-image: url('/images/slider-prev.png');
+  background-image: url('./images/slider-prev.png');
 }
 .swiper .swiper-button-next {
   margin-right: 20px;
-  background-image: url('/images/slider-next.png');
+  background-image: url('./images/slider-next.png');
 }
 
 .swiper .swiper-button-prev:after,
