@@ -43,14 +43,13 @@ img {
   min-width: 320px;
   width: 100vw;
   min-height: 1800px;
+  overflow: hidden;
   margin: 0 auto;
 
   background-color: #ffffff;
   background-image: url(../images/bg-top.png), url(../images/bg-bottom.png);
   background-position: top center, bottom center;
   background-repeat: no-repeat;
-
-  overflow: hidden;
 }
 
 @media (min-width: 460px) {
@@ -82,8 +81,8 @@ img {
 
 .container {
   width: 1210px;
-  padding: 0 15px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 .title {
@@ -103,17 +102,17 @@ img {
 
 .button {
   display: inline-block;
-  cursor: pointer;
-  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), #b62e2c;
   color: #ffffff;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), #b62e2c;
   border: none;
+  cursor: pointer;
   transition: background var(--smooth-interface), color var(--smooth-interface);
 }
 
 .button:hover,
 .button:focus {
-  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), #a32a2a;
   color: #f3f3f3;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), #a32a2a;
 }
 
 .button:active {
@@ -124,11 +123,11 @@ img {
 
 .header#navigation {
   position: fixed;
-  width: inherit;
-  background-color: #001427;
-  color: #ffffff;
-  opacity: 0.9;
   z-index: 10;
+  width: inherit;
+  color: #ffffff;
+  background-color: #001427;
+  opacity: 0.9;
 }
 
 .menu-desktop {
@@ -162,10 +161,10 @@ img {
 
 .menu-button {
   padding: 10px 38px;
-  border-radius: 8px;
   font-weight: 800;
   font-size: 21px;
   line-height: 25px;
+  border-radius: 8px;
 }
 
 /* ==================== Features section ==================== */
@@ -205,20 +204,20 @@ img {
 
 .features-button {
   padding: 12px 38px;
-  border-radius: 40px;
   font-weight: 800;
   font-size: 36px;
   line-height: 44px;
+  border-radius: 40px;
 }
 
 /* ==================== Products section ==================== */
 
 .section#products {
+  scroll-margin-top: 65px;
   padding-top: 108px;
   padding-bottom: 30px;
-  color: #000000;
   text-align: center;
-  scroll-margin-top: 65px;
+  color: #000000;
 }
 
 .products-title {
@@ -255,8 +254,8 @@ img {
 
 .products-link:hover,
 .products-link:focus {
-  transform: scale(1.03);
   filter: drop-shadow(0px 8px 8px rgba(0, 0, 0, 0.35));
+  transform: scale(1.03);
 }
 
 .products-video {
@@ -270,19 +269,20 @@ img {
 .section#partners {
   padding-top: 30px;
   padding-bottom: 58px;
-  color: #000000;
   text-align: center;
+  color: #000000;
 }
 
 .partners-wrapper {
-  margin-bottom: 283px;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 283px;
 }
 
 .partners-leftbar {
   text-align: left;
 }
+
 .partners-title {
   margin-bottom: 32px;
 }
@@ -316,21 +316,21 @@ img {
 }
 
 .partners-button {
+  padding: 20px 117px;
   font-weight: 800;
   font-size: 36px;
   line-height: 44px;
-  padding: 20px 117px;
   border-radius: 40px;
 }
 
 /* ==================== Footer and contacts ==================== */
 
 .footer#contacts {
+  scroll-margin-top: 130px;
   padding-top: 58px;
   padding-bottom: 30px;
-  color: #ffffff;
   text-align: center;
-  scroll-margin-top: 130px;
+  color: #ffffff;
 }
 
 .contacts-wrapper {
@@ -414,16 +414,16 @@ img {
 }
 
 .swiper-pagination-bullets .swiper-pagination-bullet-active {
-  background-color: #b62e2c;
   width: 12px;
   height: 12px;
+  background-color: #b62e2c;
 }
 
 .swiper-products .swiper-button-prev,
 .swiper-products .swiper-button-next {
-  height: 80px;
-  width: 30px;
   top: 300px;
+  width: 30px;
+  height: 80px;
   margin: 0 20px;
   background-size: contain;
   background-repeat: no-repeat;
@@ -444,13 +444,10 @@ img {
 }
 
 .slide-image {
-  margin-bottom: 15px;
-  margin: 50px 100px;
   width: 760px;
   height: 425px;
-
+  margin: 50px 100px;
   object-fit: contain;
-  /* padding: 0 10px; */
 }
 
 .slide-title-wrapper {
@@ -459,17 +456,16 @@ img {
 }
 
 .slide-title {
-  padding-left: 40px;
   margin-bottom: 7px;
-
+  padding-left: 40px;
   font-weight: 700;
   font-size: 24px;
   line-height: 27px;
 }
 
 .slide-description {
-  padding: 20px 40px 35px 40px;
   display: flex;
+  padding: 20px 40px 35px 40px;
 }
 
 .slide-description-list {
@@ -488,19 +484,20 @@ img {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
-  overflow-y: scroll;
-  visibility: hidden;
-  opacity: 0;
-  scale: 1.1;
-  transition: visibility var(--smooth-modal), opacity var(--smooth-modal), scale var(--smooth-modal);
-  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 20;
 
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 20;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: scroll;
+  
+  visibility: hidden;
+  opacity: 0;
+  scale: 1.1;
+  background-color: rgba(0, 0, 0, 0.7);
+  transition: visibility var(--smooth-modal), opacity var(--smooth-modal), scale var(--smooth-modal);
 }
 
 .is-visible {
