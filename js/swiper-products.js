@@ -1,6 +1,6 @@
-import Swiper from './swiper-bundle.esm.browser.js';
+import Swiper from './swiper-bundle.esm.browser.min.js';
 
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.swiper-products', {
   loop: true,
 
   navigation: {
