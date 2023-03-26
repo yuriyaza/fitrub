@@ -10,8 +10,8 @@
 
     <meta property="og:title" content="Гумові кріплення FITRUB" />
     <meta property="og:description" content="FITRUB - це гумові кріплення для легкого та швидкого монтажу, розбирання овальних та подібних до них предметів" />
-    <meta property="og:url" content="http://" />
-    <meta property="og:image" content="./images/og-image.jpg" />
+    <meta property="og:url" content="https://yuriyaza.github.io/fitrub" />
+    <meta property="og:image" content="https://yuriyaza.github.io/fitrub/images/og-image.jpg" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
 
@@ -30,7 +30,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet" />
 
     <link rel="stylesheet" href="./css/modern-normalize.min.css" />
-    <link rel="stylesheet" href="./css/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
@@ -68,7 +68,26 @@
                 <a class="button features-button" href="">Стати партнером</a>
               </div>
               <div class="features-rightbar">
-                <img class="features-image" src="./images/features.gif" width="687" height="473" alt="Демонстрація застосування" />
+                <!-- <img class="features-image" src="./images/features.gif" width="687" height="473" alt="Демонстрація застосування" /> -->
+                <div class="swiper swiper-features">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img src="./images/features-slide-1.jpg" width="687" height="473" alt="Переваги слайд 1">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./images/features-slide-2.jpg" width="687" height="473" alt="Переваги слайд 2">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./images/features-slide-3.jpg" width="687" height="473" alt="Переваги слайд 3">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./images/features-slide-4.jpg" width="687" height="473" alt="Переваги слайд 4">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="./images/features-slide-5.jpg" width="687" height="473" alt="Переваги слайд 5">
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -81,32 +100,32 @@
               <ul class="products-list">
                 <li class="products-item">
                   <a class="products-link" href="" data-modal-open>
-                    <img src="./images/card-1.jpg" width="380" height="318" alt="Кріплення тип 1" />
+                    <img class="products-image" src="./images/product-card-1.jpg" width="380" height="318" alt="Кріплення тип 1" />
                   </a>
                 </li>
                 <li class="products-item">
                   <a class="products-link" href="" data-modal-open>
-                    <img src="./images/card-2.jpg" width="380" height="318" alt="Кріплення тип 2" />
+                    <img class="products-image" src="./images/product-card-2.jpg" width="380" height="318" alt="Кріплення тип 2" />
                   </a>
                 </li>
                 <li class="products-item">
                   <a class="products-link" href="" data-modal-open>
-                    <img src="./images/card-3.jpg" width="380" height="318" alt="Кріплення тип 3" />
+                    <img class="products-image" src="./images/product-card-3.jpg" width="380" height="318" alt="Кріплення тип 3" />
                   </a>
                 </li>
                 <li class="products-item">
                   <a class="products-link" href="" data-modal-open>
-                    <img src="./images/card-4.jpg" width="380" height="318" alt="Кріплення тип 4" />
+                    <img class="products-image" src="./images/product-card-4.jpg" width="380" height="318" alt="Кріплення тип 4" />
                   </a>
                 </li>
                 <li class="products-item">
                   <a class="products-link" href="" data-modal-open>
-                    <img src="./images/card-5.jpg" width="380" height="318" alt="Кріплення тип 5" />
+                    <img class="products-image" src="./images/product-card-5.jpg" width="380" height="318" alt="Кріплення тип 5" />
                   </a>
                 </li>
                 <li class="products-item">
                   <a class="products-link" href="" data-modal-open>
-                    <img src="./images/card-6.jpg" width="380" height="318" alt="Кріплення тип 6" />
+                    <img class="products-image" src="./images/product-card-6.jpg" width="380" height="318" alt="Кріплення тип 6" />
                   </a>
                 </li>
               </ul>
@@ -162,17 +181,17 @@
               <ul class="contacts-social">
                 <li class="contacts-social-item">
                   <a class="contacts-social-link" href="">
-                    <img class="contacts-social-icon" src="./images/instagram.png" alt="Instagram" />
+                    <img class="contacts-social-icon" src="./images/socials-instagram.png" alt="Посилання на Instagram" />
                   </a>
                 </li>
                 <li class="contacts-social-item">
                   <a class="contacts-social-link" href="">
-                    <img class="contacts-social-icon" src="./images/facebook.png" alt="Facebook" />
+                    <img class="contacts-social-icon" src="./images/socials-facebook.png" alt="Посилання на Facebook" />
                   </a>
                 </li>
                 <li class="contacts-social-item">
                   <a class="contacts-social-link" href="">
-                    <img class="contacts-social-icon" src="./images/youtube.png" alt="YouTube" />
+                    <img class="contacts-social-icon" src="./images/socials-youtube.png" alt="Посилання на YouTube" />
                   </a>
                 </li>
               </ul>
@@ -184,110 +203,131 @@
     </div>
 
     <div class="backdrop" data-modal>
-      <div class="swiper">
+      <div class="swiper swiper-products">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <img class="slide-image" src="./images/slide-1.jpg" width="950" height="530" alt="Кріплення тип 1" />
+            <img class="slide-image" src="./images/product-slide-1.jpg" width="950" height="530" alt="Кріплення тип 1" />
             <div class="slide-title-wrapper">
               <h2 class="slide-title">Характеристики Кріплення гумове універсальне 22-31мм (F2231)</h2>
               <div class="slide-separator"></div>
             </div>
             <div class="slide-description">
-              <ul class="slide-list">
-                <li class="slide-item"><b>Артикул:&nbsp;</b>F2231</li>
-                <li class="slide-item"><b>Вид аксесуара:&nbsp;</b>універсальний тримач</li>
-                <li class="slide-item"><b>Довжина:&nbsp;</b></li>
-                <li class="slide-item"><b>Ширина:&nbsp;</b></li>
-                <li class="slide-item"><b>Розмір:&nbsp;</b></li>
+              <ul class="slide-description-list">
+                <li class="slide-description-item"><b>Артикул:&nbsp;</b>F2231</li>
+                <li class="slide-description-item"><b>Вид аксесуара:&nbsp;</b>універсальний тримач</li>
+                <li class="slide-description-item"><b>Довжина:&nbsp;</b></li>
+                <li class="slide-description-item"><b>Ширина:&nbsp;</b></li>
+                <li class="slide-description-item"><b>Розмір:&nbsp;</b></li>
               </ul>
-              <ul class="slide-list">
-                <li class="slide-item"><b>Країна виробник:&nbsp;</b>Польща</li>
-                <li class="slide-item"><b>Навантаження на розрив:&nbsp;</b></li>
-                <li class="slide-item"><b>Додаткова інформація:&nbsp;</b></li>
+              <ul class="slide-description-list">
+                <li class="slide-description-item"><b>Країна виробник:&nbsp;</b>Польща</li>
+                <li class="slide-description-item"><b>Навантаження на розрив:&nbsp;</b></li>
+                <li class="slide-description-item"><b>Додаткова інформація:&nbsp;</b></li>
               </ul>
             </div>
           </div>
           <div class="swiper-slide">
-            <img class="slide-image" src="./images/slide-2.jpg" width="950" height="530" alt="Кріплення тип 1" />
+            <img class="slide-image" src="./images/product-slide-2.jpg" width="950" height="530" alt="Кріплення тип 2" />
             <div class="slide-title-wrapper">
               <h2 class="slide-title">Характеристики Кріплення гумове універсальне 22-31мм (F2231)</h2>
               <div class="slide-separator"></div>
             </div>
             <div class="slide-description">
-              <ul class="slide-list">
-                <li class="slide-item"><b>Артикул:&nbsp;</b>F2231</li>
-                <li class="slide-item"><b>Вид аксесуара:&nbsp;</b>універсальний тримач</li>
-                <li class="slide-item"><b>Довжина:&nbsp;</b></li>
-                <li class="slide-item"><b>Ширина:&nbsp;</b></li>
-                <li class="slide-item"><b>Розмір:&nbsp;</b></li>
+              <ul class="slide-description-list">
+                <li class="slide-description-item"><b>Артикул:&nbsp;</b>F2231</li>
+                <li class="slide-description-item"><b>Вид аксесуара:&nbsp;</b>універсальний тримач</li>
+                <li class="slide-description-item"><b>Довжина:&nbsp;</b></li>
+                <li class="slide-description-item"><b>Ширина:&nbsp;</b></li>
+                <li class="slide-description-item"><b>Розмір:&nbsp;</b></li>
               </ul>
-              <ul class="slide-list">
-                <li class="slide-item"><b>Країна виробник:&nbsp;</b>Польща</li>
-                <li class="slide-item"><b>Навантаження на розрив:&nbsp;</b></li>
-                <li class="slide-item"><b>Додаткова інформація:&nbsp;</b></li>
+              <ul class="slide-description-list">
+                <li class="slide-description-item"><b>Країна виробник:&nbsp;</b>Польща</li>
+                <li class="slide-description-item"><b>Навантаження на розрив:&nbsp;</b></li>
+                <li class="slide-description-item"><b>Додаткова інформація:&nbsp;</b></li>
               </ul>
             </div>
           </div>
           <div class="swiper-slide">
-            <img class="slide-image" src="./images/slide-3.jpg" width="950" height="530" alt="Кріплення тип 1" />
+            <img class="slide-image" src="./images/product-slide-3.jpg" width="950" height="530" alt="Кріплення тип 3" />
             <div class="slide-title-wrapper">
               <h2 class="slide-title">Характеристики Кріплення гумове універсальне 22-31мм (F2231)</h2>
               <div class="slide-separator"></div>
             </div>
             <div class="slide-description">
-              <ul class="slide-list">
-                <li class="slide-item"><b>Артикул:&nbsp;</b>F2231</li>
-                <li class="slide-item"><b>Вид аксесуара:&nbsp;</b>універсальний тримач</li>
-                <li class="slide-item"><b>Довжина:&nbsp;</b></li>
-                <li class="slide-item"><b>Ширина:&nbsp;</b></li>
-                <li class="slide-item"><b>Розмір:&nbsp;</b></li>
+              <ul class="slide-description-list">
+                <li class="slide-description-item"><b>Артикул:&nbsp;</b>F2231</li>
+                <li class="slide-description-item"><b>Вид аксесуара:&nbsp;</b>універсальний тримач</li>
+                <li class="slide-description-item"><b>Довжина:&nbsp;</b></li>
+                <li class="slide-description-item"><b>Ширина:&nbsp;</b></li>
+                <li class="slide-description-item"><b>Розмір:&nbsp;</b></li>
               </ul>
-              <ul class="slide-list">
-                <li class="slide-item"><b>Країна виробник:&nbsp;</b>Польща</li>
-                <li class="slide-item"><b>Навантаження на розрив:&nbsp;</b></li>
-                <li class="slide-item"><b>Додаткова інформація:&nbsp;</b></li>
+              <ul class="slide-description-list">
+                <li class="slide-description-item"><b>Країна виробник:&nbsp;</b>Польща</li>
+                <li class="slide-description-item"><b>Навантаження на розрив:&nbsp;</b></li>
+                <li class="slide-description-item"><b>Додаткова інформація:&nbsp;</b></li>
               </ul>
             </div>
           </div>
           <div class="swiper-slide">
-            <img class="slide-image" src="./images/slide-4.jpg" width="950" height="530" alt="Кріплення тип 1" />
+            <img class="slide-image" src="./images/product-slide-4.jpg" width="950" height="530" alt="Кріплення тип 4" />
             <div class="slide-title-wrapper">
               <h2 class="slide-title">Характеристики Кріплення гумове універсальне 22-31мм (F2231)</h2>
               <div class="slide-separator"></div>
             </div>
             <div class="slide-description">
-              <ul class="slide-list">
-                <li class="slide-item"><b>Артикул:&nbsp;</b>F2231</li>
-                <li class="slide-item"><b>Вид аксесуара:&nbsp;</b>універсальний тримач</li>
-                <li class="slide-item"><b>Довжина:&nbsp;</b></li>
-                <li class="slide-item"><b>Ширина:&nbsp;</b></li>
-                <li class="slide-item"><b>Розмір:&nbsp;</b></li>
+              <ul class="slide-description-list">
+                <li class="slide-description-item"><b>Артикул:&nbsp;</b>F2231</li>
+                <li class="slide-description-item"><b>Вид аксесуара:&nbsp;</b>універсальний тримач</li>
+                <li class="slide-description-item"><b>Довжина:&nbsp;</b></li>
+                <li class="slide-description-item"><b>Ширина:&nbsp;</b></li>
+                <li class="slide-description-item"><b>Розмір:&nbsp;</b></li>
               </ul>
-              <ul class="slide-list">
-                <li class="slide-item"><b>Країна виробник:&nbsp;</b>Польща</li>
-                <li class="slide-item"><b>Навантаження на розрив:&nbsp;</b></li>
-                <li class="slide-item"><b>Додаткова інформація:&nbsp;</b></li>
+              <ul class="slide-description-list">
+                <li class="slide-description-item"><b>Країна виробник:&nbsp;</b>Польща</li>
+                <li class="slide-description-item"><b>Навантаження на розрив:&nbsp;</b></li>
+                <li class="slide-description-item"><b>Додаткова інформація:&nbsp;</b></li>
               </ul>
             </div>
           </div>
           <div class="swiper-slide">
-            <img class="slide-image" src="./images/slide-5.jpg" width="950" height="530" alt="Кріплення тип 1" />
+            <img class="slide-image" src="./images/product-slide-5.jpg" width="950" height="530" alt="Кріплення тип 5" />
             <div class="slide-title-wrapper">
               <h2 class="slide-title">Характеристики Кріплення гумове універсальне 22-31мм (F2231)</h2>
               <div class="slide-separator"></div>
             </div>
             <div class="slide-description">
-              <ul class="slide-list">
-                <li class="slide-item"><b>Артикул:&nbsp;</b>F2231</li>
-                <li class="slide-item"><b>Вид аксесуара:&nbsp;</b>універсальний тримач</li>
-                <li class="slide-item"><b>Довжина:&nbsp;</b></li>
-                <li class="slide-item"><b>Ширина:&nbsp;</b></li>
-                <li class="slide-item"><b>Розмір:&nbsp;</b></li>
+              <ul class="slide-description-list">
+                <li class="slide-description-item"><b>Артикул:&nbsp;</b>F2231</li>
+                <li class="slide-description-item"><b>Вид аксесуара:&nbsp;</b>універсальний тримач</li>
+                <li class="slide-description-item"><b>Довжина:&nbsp;</b></li>
+                <li class="slide-description-item"><b>Ширина:&nbsp;</b></li>
+                <li class="slide-description-item"><b>Розмір:&nbsp;</b></li>
               </ul>
-              <ul class="slide-list">
-                <li class="slide-item"><b>Країна виробник:&nbsp;</b>Польща</li>
-                <li class="slide-item"><b>Навантаження на розрив:&nbsp;</b></li>
-                <li class="slide-item"><b>Додаткова інформація:&nbsp;</b></li>
+              <ul class="slide-description-list">
+                <li class="slide-description-item"><b>Країна виробник:&nbsp;</b>Польща</li>
+                <li class="slide-description-item"><b>Навантаження на розрив:&nbsp;</b></li>
+                <li class="slide-description-item"><b>Додаткова інформація:&nbsp;</b></li>
+              </ul>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img class="slide-image" src="./images/product-slide-6.jpg" width="950" height="530" alt="Кріплення тип 6" />
+            <div class="slide-title-wrapper">
+              <h2 class="slide-title">Характеристики Кріплення гумове універсальне 22-31мм (F2231)</h2>
+              <div class="slide-separator"></div>
+            </div>
+            <div class="slide-description">
+              <ul class="slide-description-list">
+                <li class="slide-description-item"><b>Артикул:&nbsp;</b>F2231</li>
+                <li class="slide-description-item"><b>Вид аксесуара:&nbsp;</b>універсальний тримач</li>
+                <li class="slide-description-item"><b>Довжина:&nbsp;</b></li>
+                <li class="slide-description-item"><b>Ширина:&nbsp;</b></li>
+                <li class="slide-description-item"><b>Розмір:&nbsp;</b></li>
+              </ul>
+              <ul class="slide-description-list">
+                <li class="slide-description-item"><b>Країна виробник:&nbsp;</b>Польща</li>
+                <li class="slide-description-item"><b>Навантаження на розрив:&nbsp;</b></li>
+                <li class="slide-description-item"><b>Додаткова інформація:&nbsp;</b></li>
               </ul>
             </div>
           </div>
@@ -298,7 +338,8 @@
       </div>
     </div>
 
-    <script type="module" src="./js/modal.js"></script>
-    <script type="module" src="./js/swiper.js"></script>
+    <script type="module" src="./js/modal-window.js"></script>
+    <script type="module" src="./js/swiper-features.js"></script>
+    <script type="module" src="./js/swiper-products.js"></script>
   </body>
 </html>
