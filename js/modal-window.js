@@ -41,10 +41,10 @@
 
     bodyEl.classList.add('disable-scroll');
     bodyEl.dataset.position = pagePosition;
-    bodyEl.style.top = -pagePosition + 'px';
+    bodyEl.style.top = `${-pagePosition}px`;
 
     pageWidth = bodyEl.clientWidth - pageWidth;
-    bodyEl.style.paddingRight = pageWidth + 'px';
+    bodyEl.style.paddingRight = `${pageWidth}px`;
     htmlEl.style.scrollBehavior = 'auto';
   }
 
