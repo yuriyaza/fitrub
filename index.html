@@ -10,7 +10,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800&display=swap" rel="stylesheet" />
 
     <link rel="stylesheet" href="./css/modern-normalize.min.css" />
     <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
@@ -36,57 +36,57 @@
   </head>
 
   <body>
-    <div class="body-wrapper">
+    <div class="body-container">
       <header class="header" id="navigation">
-        <div class="container">
+        <div class="content-container">
           <div class="menu-desktop">
-            <img class="menu-logo" src="./images/logo-fitrub.png" width="110" height="50" alt="Логотип Fitrub" />
-            <nav class="menu-navigation">
-              <ul class="menu-list">
-                <li class="menu-item">
-                  <a class="menu-link" href="#features">Головна</a>
+            <img class="menu-desktop-logo" src="./images/logo-fitrub.png" width="110" height="50" alt="Логотип Fitrub" />
+            <nav class="menu-desktop-navigation">
+              <ul class="menu-desktop-list">
+                <li class="menu-desktop-item">
+                  <a class="menu-desktop-link" href="#features">Головна</a>
                 </li>
-                <li class="menu-item">
-                  <a class="menu-link" href="#products">Продукція</a>
+                <li class="menu-desktop-item">
+                  <a class="menu-desktop-link" href="#products">Продукція</a>
                 </li>
-                <li class="menu-item">
-                  <a class="menu-link" href="#contacts">Контакти</a>
+                <li class="menu-desktop-item">
+                  <a class="menu-desktop-link" href="#contacts">Контакти</a>
                 </li>
               </ul>
             </nav>
-            <a class="button menu-button" href="https://www.olx.ua/">Купити</a>
+            <a class="button menu-desktop-button" href="https://www.olx.ua/">Купити</a>
+          </div>
+
+          <div class="menu-mobile">
+            <img class="menu-logo" src="./images/logo-fitrub.png" width="110" height="50" alt="Логотип Fitrub" />
           </div>
         </div>
       </header>
 
       <main>
         <section class="section" id="features">
-          <div class="container">
+          <div class="content-container features-container">
             <div class="features-wrapper">
-              <div class="features-leftbar">
-                <h1 class="features-title">FITRUB - це гумові кріплення</h1>
-                <p class="features-description">для легкого та швидкого монтажу, розбирання овальних та подібних до них предметів</p>
-                <a class="button features-button" href="https://direct24.com.ua/">Стати партнером</a>
-              </div>
-              <div class="features-rightbar">
-                <div class="swiper swiper-features">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                      <img src="./images/features-slide-1.jpg" width="687" height="473" alt="Переваги слайд 1" />
-                    </div>
-                    <div class="swiper-slide">
-                      <img src="./images/features-slide-2.jpg" width="687" height="473" alt="Переваги слайд 2" />
-                    </div>
-                    <div class="swiper-slide">
-                      <img src="./images/features-slide-3.jpg" width="687" height="473" alt="Переваги слайд 3" />
-                    </div>
-                    <div class="swiper-slide">
-                      <img src="./images/features-slide-4.jpg" width="687" height="473" alt="Переваги слайд 4" />
-                    </div>
-                    <div class="swiper-slide">
-                      <img src="./images/features-slide-5.jpg" width="687" height="473" alt="Переваги слайд 5" />
-                    </div>
-                  </div>
+              <h1 class="features-title">FITRUB - це гумові кріплення</h1>
+              <p class="features-description">для легкого та швидкого монтажу, розбирання овальних та подібних до них предметів</p>
+              <a class="button features-button" href="https://direct24.com.ua/">Стати партнером</a>
+            </div>
+            <div class="swiper swiper-features">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="./images/features-slide-1.jpg" width="687" height="473" alt="Переваги слайд 1" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/features-slide-2.jpg" width="687" height="473" alt="Переваги слайд 2" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/features-slide-3.jpg" width="687" height="473" alt="Переваги слайд 3" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/features-slide-4.jpg" width="687" height="473" alt="Переваги слайд 4" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/features-slide-5.jpg" width="687" height="473" alt="Переваги слайд 5" />
                 </div>
               </div>
             </div>
@@ -94,109 +94,108 @@
         </section>
 
         <section class="section" id="products">
-          <div class="container">
+          <div class="content-container">
             <h2 class="title products-title">ПРОДУКЦІЯ</h2>
-            <div class="products-wrapper">
-              <ul class="products-list">
-                <li class="products-item">
-                  <a class="products-link" href="" data-modal-open>
-                    <img class="products-image" src="./images/product-card-1.jpg" width="380" height="318" alt="Кріплення тип 1" data-slide="1" />
-                  </a>
-                </li>
-                <li class="products-item">
-                  <a class="products-link" href="" data-modal-open>
-                    <img class="products-image" src="./images/product-card-2.jpg" width="380" height="318" alt="Кріплення тип 2" data-slide="2" />
-                  </a>
-                </li>
-                <li class="products-item">
-                  <a class="products-link" href="" data-modal-open>
-                    <img class="products-image" src="./images/product-card-3.jpg" width="380" height="318" alt="Кріплення тип 3" data-slide="3" />
-                  </a>
-                </li>
-                <li class="products-item">
-                  <a class="products-link" href="" data-modal-open>
-                    <img class="products-image" src="./images/product-card-4.jpg" width="380" height="318" alt="Кріплення тип 4" data-slide="4" />
-                  </a>
-                </li>
-                <li class="products-item">
-                  <a class="products-link" href="" data-modal-open>
-                    <img class="products-image" src="./images/product-card-5.jpg" width="380" height="318" alt="Кріплення тип 5" data-slide="5" />
-                  </a>
-                </li>
-                <li class="products-item">
-                  <a class="products-link" href="" data-modal-open>
-                    <img class="products-image" src="./images/product-card-6.jpg" width="380" height="318" alt="Кріплення тип 6" data-slide="6" />
-                  </a>
-                </li>
-              </ul>
+            <ul class="products-list">
+              <li class="products-item">
+                <a class="products-link" href="" data-modal-open>
+                  <img class="products-image" src="./images/product-card-1.jpg" width="380" height="318" alt="Кріплення тип 1" data-slide="1" />
+                </a>
+              </li>
+              <li class="products-item">
+                <a class="products-link" href="" data-modal-open>
+                  <img class="products-image" src="./images/product-card-2.jpg" width="380" height="318" alt="Кріплення тип 2" data-slide="2" />
+                </a>
+              </li>
+              <li class="products-item">
+                <a class="products-link" href="" data-modal-open>
+                  <img class="products-image" src="./images/product-card-3.jpg" width="380" height="318" alt="Кріплення тип 3" data-slide="3" />
+                </a>
+              </li>
+              <li class="products-item">
+                <a class="products-link" href="" data-modal-open>
+                  <img class="products-image" src="./images/product-card-4.jpg" width="380" height="318" alt="Кріплення тип 4" data-slide="4" />
+                </a>
+              </li>
+              <li class="products-item">
+                <a class="products-link" href="" data-modal-open>
+                  <img class="products-image" src="./images/product-card-5.jpg" width="380" height="318" alt="Кріплення тип 5" data-slide="5" />
+                </a>
+              </li>
+              <li class="products-item">
+                <a class="products-link" href="" data-modal-open>
+                  <img class="products-image" src="./images/product-card-6.jpg" width="380" height="318" alt="Кріплення тип 6" data-slide="6" />
+                </a>
+              </li>
+            </ul>
+            <div class="products-video">
+              <img class="products-video-source" src="./images/product-video-1200x675.jpg" width="1200" height="675" alt="Відеоогляд продукції" />
             </div>
-            <div class="products-video"></div>
           </div>
         </section>
 
         <section class="section" id="partners">
-          <div class="container">
+          <div class="content-container">
             <div class="partners-wrapper">
-              <div class="partners-leftbar">
+              <div class="partners-info">
                 <h2 class="title partners-title">НАШІ ПАРТНЕРИ</h2>
-                <a class="partners-shopcar-wrapper" href="https://shopcar.ua/">
-                  <img class="partners-shopcar-logo" src="./images/logo-shopcar.png" width="98" height="98" alt="Логотип ShopCar" />
-                  <div class="partners-shopcar-info">
-                    <h3 class="partners-shopcar-name">ShopCar</h3>
-                    <p class="partners-shopcar-description">Мережа Магазинів Автозапчастин</p>
-                  </div>
-                </a>
+                <ul class="partners-list">
+                  <li class="partners-item">
+                    <a class="partners-link" href="https://shopcar.ua/">
+                      <img class="partners-shopcar-logo" src="./images/logo-shopcar.png" width="98" height="98" alt="Логотип ShopCar" />
+                      <div class="partners-shopcar-info">
+                        <h3 class="partners-shopcar-name">ShopCar</h3>
+                        <p class="partners-shopcar-description">Мережа Магазинів Автозапчастин</p>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
               </div>
-              <div class="partners-rightbar">
-                <div class="partners-map">
-                  <iframe
-                    title="Карта партнерів"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2573.8232702479154!2d23.94256261530445!3d49.82698673997225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473ae744fbf174e1%3A0xeda7aa539715fea3!2zU2hvcENhciAtINCQ0LLRgtC-0LfQsNC_0YfQsNGB0YLQuNC90Lg!5e0!3m2!1sru!2sua!4v1679167741537!5m2!1sru!2sua"
-                    style="width: 100%; height: 100%; border: 0"
-                    allowfullscreen=""
-                    loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"
-                  ></iframe>
-                </div>
+              <div class="partners-map">
+                <iframe
+                  title="Карта партнерів"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2573.8232702479154!2d23.94256261530445!3d49.82698673997225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473ae744fbf174e1%3A0xeda7aa539715fea3!2zU2hvcENhciAtINCQ0LLRgtC-0LfQsNC_0YfQsNGB0YLQuNC90Lg!5e0!3m2!1sru!2sua!4v1679167741537!5m2!1sru!2sua"
+                  style="width: 100%; height: 100%; border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
               </div>
             </div>
-            <a class="button partners-button" href="https://direct24.com.ua/">Стати партнером</a>
+            <a class="button partners-button" href="https://direct24.com.ua/users/register/">Стати партнером</a>
           </div>
         </section>
       </main>
 
       <footer class="footer" id="contacts">
-        <div class="container">
+        <div class="content-container">
           <div class="contacts-wrapper">
-            <div class="contacts-leftbar">
+            <div class="contacts-info">
               <h2 class="title contacts-title">КОНТАКТИ</h2>
               <h3 class="contacts-company">FITRUB</h3>
               <address class="contacts-address">
                 <a class="contacts-phone" href="tel:+380999999999"><span class="contacts-accent">Тел.:</span> +38 (099) 999-99-99</a>
                 <a class="contacts-mail" href="mailto:fitrub@ukr.net"><span class="contacts-accent">E-mail:</span> fitrub@ukr.net</a>
-                <p class="contacts-details"><span class="contacts-accent">Адреса:</span> вулиця Городоцька, 242, Львів</p>
-                <p class="contacts-details">Львівська область, 79041</p>
+                <p class="contacts-details"><span class="contacts-accent">Адреса:</span> вулиця Городоцька, 242, Львів, Львівська область, 79041</p>
               </address>
             </div>
-            <div class="contacts-rightbar">
-              <ul class="contacts-socials">
-                <li class="contacts-socials-item">
-                  <a class="contacts-socials-link" href="https://www.instagram.com/" >
-                    <img class="contacts-socials-icon" src="./images/socials-instagram.png" width="53" height="53" alt="Посилання на Instagram" />
-                  </a>
-                </li>
-                <li class="contacts-socials-item">
-                  <a class="contacts-socials-link" href="https://www.facebook.com/">
-                    <img class="contacts-socials-icon" src="./images/socials-facebook.png" width="48" height="48" alt="Посилання на Facebook" />
-                  </a>
-                </li>
-                <li class="contacts-socials-item">
-                  <a class="contacts-socials-link" href="https://www.youtube.com/">
-                    <img class="contacts-socials-icon" src="./images/socials-youtube.png" width="52" height="36" alt="Посилання на YouTube" />
-                  </a>
-                </li>
-              </ul>
-            </div>
+            <ul class="contacts-socials">
+              <li class="contacts-socials-item">
+                <a class="contacts-socials-link" href="https://www.instagram.com/">
+                  <img class="contacts-socials-icon" src="./images/socials-instagram.png" width="50" height="50" alt="Посилання на Instagram" />
+                </a>
+              </li>
+              <li class="contacts-socials-item">
+                <a class="contacts-socials-link" href="https://www.facebook.com/">
+                  <img class="contacts-socials-icon" src="./images/socials-facebook.png" width="50" height="50" alt="Посилання на Facebook" />
+                </a>
+              </li>
+              <li class="contacts-socials-item">
+                <a class="contacts-socials-link" href="https://www.youtube.com/">
+                  <img class="contacts-socials-icon" src="./images/socials-youtube.png" width="52" height="36" alt="Посилання на YouTube" />
+                </a>
+              </li>
+            </ul>
           </div>
           <p class="contacts-copyright">&copy; 2023 FITRUB, Всі права захищені</p>
         </div>
