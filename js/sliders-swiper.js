@@ -7,6 +7,7 @@ const swiperFeatures = new Swiper('.swiper-features', {
   coverflowEffect: {
     depth: 500,
     scale: 0.8,
+    slideShadows: false,
   },
 
   speed: 3000,
