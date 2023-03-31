@@ -67,7 +67,7 @@ img {
     min-width: 768px;
     width: 100%;
     background-image: url(../images/bg-top-1200x1600.png), url(../images/bg-bottom-1200x1600.png);
-    background-position: top -570px center, bottom -935px center;
+    background-position: top -570px center, bottom -885px center;
   }
 }
 
@@ -76,13 +76,14 @@ img {
     min-width: 1200px;
     width: 100%;
     background-image: url(../images/bg-top-1600x1600.png), url(../images/bg-bottom-1600x1600.png);
-    background-position: top -860px center, bottom -725px center;
+    background-position: top -830px center, bottom -750px center;
   }
 }
 
 @media (min-width: 1600px) {
   .body-container {
     width: 1600px;
+    background-position: top -740px center, bottom -740px center;
   }
 }
 
@@ -146,6 +147,24 @@ img {
   }
 }
 
+@media (min-width: 768px) {
+  .title {
+    font-size: 34px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .title {
+    font-size: 38px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .title {
+    font-size: 42px;
+  }
+}
+
 .title::after {
   content: '';
   display: block;
@@ -156,14 +175,26 @@ img {
 
 @media (min-width: 460px) {
   .title::after {
-    width: 97px;
+    width: 98px;
   }
 }
 
-@media (min-width: 460px) {
+@media (min-width: 768px) {
   .title::after {
-    width: 110px;
+    width: 105px;
     height: 7px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .title::after {
+    width: 118px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .title::after {
+    width: 130px;
   }
 }
 
@@ -384,10 +415,16 @@ img {
   }
 }
 
+@media (min-width: 1200px) {
+  .section#features {
+    padding-top: 130px;
+    padding-bottom: 80px;
+  }
+}
+
 @media (min-width: 1600px) {
   .section#features {
-    padding-top: 148px;
-    padding-bottom: 108px;
+    padding-bottom: 80px;
   }
 }
 
@@ -438,13 +475,21 @@ img {
 
 @media (min-width: 768px) {
   .features-title {
+    margin-bottom: 20px;
+    font-size: 32px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .features-title {
+    margin-bottom: 22px;
     font-size: 32px;
   }
 }
 
 @media (min-width: 1600px) {
   .features-title {
-    margin-bottom: 45px;
+    margin-bottom: 26px;
   }
 }
 
@@ -457,14 +502,14 @@ img {
 
 @media (min-width: 768px) {
   .features-description {
-    margin-bottom: 44px;
+    margin-bottom: 55px;
     font-size: 27px;
   }
 }
 
 @media (min-width: 1600px) {
   .features-description {
-    margin-bottom: 105px;
+    margin-bottom: 70px;
   }
 }
 
@@ -486,13 +531,13 @@ img {
 
 @media (min-width: 768px) {
   .features-button {
-    font-size: 36px;
+    font-size: 28px;
   }
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 1200px) {
   .features-button {
-    padding: 12px 38px;
+    padding: 11px 38px;
   }
 }
 
@@ -517,11 +562,12 @@ img {
   }
 }
 
+/* Розмір плюс */
 @media (min-width: 1200px) {
   .swiper-features {
     margin-bottom: 0;
-    width: 500px;
-    height: 345px;
+    width: 525px;
+    height: 360px;
   }
 }
 
@@ -555,19 +601,19 @@ img {
 
 @media (min-width: 1200px) {
   .section#products {
-    /* scroll-margin-top: 65px; */
-    padding-top: 108px;
+    padding-top: 80px;
     padding-bottom: 30px;
+    scroll-margin-top: 110px;
   }
 }
 
-/* @media (min-width: 1600px) {
+@media (min-width: 1600px) {
   .section#products {
-    scroll-margin-top: 65px;
-    padding-top: 108px;
+    scroll-margin-top: 75px;
+    padding-top: 80px;
     padding-bottom: 30px;
   }
-} */
+}
 
 .products-title {
   margin-bottom: 27px;
@@ -591,7 +637,7 @@ img {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 36px 20px;
-    margin-bottom: 42px;
+    margin-bottom: 36px;
     padding-bottom: 0;
   }
 }
@@ -600,7 +646,6 @@ img {
   .products-list {
     gap: 36px 20px;
     /* padding: 0; */
-    margin-bottom: 40px;
   }
 }
 
@@ -692,14 +737,20 @@ img {
 @media (min-width: 768px) {
   .section#partners {
     padding-top: 27px;
-    padding-bottom: 13px;
+    padding-bottom: 45px;
   }
 }
 
 @media (min-width: 1200px) {
   .section#partners {
     padding-top: 30px;
-    padding-bottom: 58px;
+    padding-bottom: 45px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .section#partners {
+    padding-bottom: 50px;
   }
 }
 
@@ -719,6 +770,12 @@ img {
 @media (min-width: 460px) {
   .partners-info {
     min-height: 450px;
+  }
+}
+
+@media (min-width: 768px) {
+  .partners-info {
+    min-height: 500px;
   }
 }
 
@@ -837,14 +894,14 @@ img {
 
 @media (min-width: 768px) {
   .partners-button {
-    padding: 19px 66px;
-    font-size: 36px;
+    padding: 12px 60px;
+    font-size: 28px;
   }
 }
 
 @media (min-width: 1200px) {
   .partners-button {
-    padding: 20px 117px;
+    padding: 16px 90px;
   }
 }
 
@@ -860,16 +917,22 @@ img {
 
 @media (min-width: 768px) {
   .footer#contacts {
-    padding-top: 13px;
-    padding-bottom: 12px;
+    padding-top: 45px;
+    padding-bottom: 20px;
   }
 }
 
 @media (min-width: 1200px) {
   .footer#contacts {
-    /* scroll-margin-top: 130px; */
-    padding-top: 58px;
+    padding-top: 45px;
     padding-bottom: 30px;
+    scroll-margin-top: 110px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .footer#contacts {
+    padding-top: 50px;
   }
 }
 
@@ -995,7 +1058,6 @@ img {
 }
 
 .contacts-copyright {
-  padding: 0 20px;
   font-weight: 300;
   font-size: 13px;
 }
