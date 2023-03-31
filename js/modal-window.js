@@ -3,11 +3,13 @@
   const bodyEl = document.querySelector('body');
   const backdropEl = document.querySelector('.backdrop');
   const modalWindowEl = document.querySelector('[data-modal]');
-  const openModalWindowEl = document.querySelectorAll('[data-modal-open]');
+  const sourceElementEl = document.querySelectorAll('[data-modal-open]');
+  const closeButtonEl = document.querySelector('[data-modal-close]');
 
-  openModalWindowEl.forEach((element) => {
+  sourceElementEl.forEach((element) => {
     element.addEventListener('click', openModal);
   });
+  closeButtonEl.addEventListener('click', closeModal);
 
   function openModal(event) {
     event.preventDefault();

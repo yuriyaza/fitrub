@@ -38,28 +38,30 @@
   <body>
     <div class="body-container">
       <header class="header" id="navigation">
-        <div class="content-container">
-          <div class="menu-desktop">
-            <img class="menu-desktop-logo" src="./images/logo-fitrub.png" width="110" height="50" alt="Логотип Fitrub" />
-            <nav class="menu-desktop-navigation">
-              <ul class="menu-desktop-list">
-                <li class="menu-desktop-item">
-                  <a class="menu-desktop-link" href="#features">Головна</a>
-                </li>
-                <li class="menu-desktop-item">
-                  <a class="menu-desktop-link" href="#products">Продукція</a>
-                </li>
-                <li class="menu-desktop-item">
-                  <a class="menu-desktop-link" href="#contacts">Контакти</a>
-                </li>
-              </ul>
+        <div class="menubar">
+          <div class="content-container">
+            <nav class="desktop-menubar">
+              <img class="desktop-menu-logo" src="./images/logo-fitrub.png" width="110" height="50" alt="Логотип Fitrub" />
+              <a class="desktop-menu-link" href="#features">Головна</a>
+              <a class="desktop-menu-link" href="#products">Продукція</a>
+              <a class="desktop-menu-link" href="#contacts">Контакти</a>
+              <a class="button desktop-menu-button" href="https://www.olx.ua/">Купити</a>
             </nav>
-            <a class="button menu-desktop-button" href="https://www.olx.ua/">Купити</a>
           </div>
-
-          <div class="menu-mobile">
-            <img class="menu-logo" src="./images/logo-fitrub.png" width="110" height="50" alt="Логотип Fitrub" />
+          <div class="mobile-menubar">
+            <img class="mobile-menu-logo" src="./images/logo-fitrub.png" width="110" height="50" alt="Логотип Fitrub" />
+            <button class="mobile-menu-toggle" type="button" data-menu-open></button>
           </div>
+        </div>
+        <div class="mobile-menu-backdrop" data-menu-container>
+          <nav class="mobile-menu" data-menu>
+            <div class="mobile-menu-wrapper">
+              <a class="button mobile-menu-button" href="https://www.olx.ua/">Купити</a>
+              <a class="mobile-menu-link" href="#features">Головна</a>
+              <a class="mobile-menu-link" href="#products">Продукція</a>
+              <a class="mobile-menu-link" href="#contacts">Контакти</a>
+            </div>
+          </nav>
         </div>
       </header>
 
@@ -69,24 +71,24 @@
             <div class="features-wrapper slim">
               <h1 class="features-title">FITRUB - це гумові кріплення</h1>
               <p class="features-description">для легкого та швидкого монтажу, розбирання овальних та подібних до них предметів</p>
-              <a class="button features-button" href="https://direct24.com.ua/">Стати партнером</a>
+              <a class="button features-button" href="https://direct24.com.ua/users/register/">Стати партнером</a>
             </div>
             <div class="swiper swiper-features">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <img src="./images/features-slide-1.jpg" width="687" height="473" alt="Переваги слайд 1" />
+                  <img class="swiper-features-image" src="./images/features-slide-1.jpg" width="320" height="220" alt="Застосування слайд 1" />
                 </div>
                 <div class="swiper-slide">
-                  <img src="./images/features-slide-2.jpg" width="687" height="473" alt="Переваги слайд 2" />
+                  <img class="swiper-features-image" src="./images/features-slide-2.jpg" width="320" height="220" alt="Застосування слайд 2" />
                 </div>
                 <div class="swiper-slide">
-                  <img src="./images/features-slide-3.jpg" width="687" height="473" alt="Переваги слайд 3" />
+                  <img class="swiper-features-image" src="./images/features-slide-3.jpg" width="320" height="220" alt="Застосування слайд 3" />
                 </div>
                 <div class="swiper-slide">
-                  <img src="./images/features-slide-4.jpg" width="687" height="473" alt="Переваги слайд 4" />
+                  <img class="swiper-features-image" src="./images/features-slide-4.jpg" width="320" height="220" alt="Застосування слайд 4" />
                 </div>
                 <div class="swiper-slide">
-                  <img src="./images/features-slide-5.jpg" width="687" height="473" alt="Переваги слайд 5" />
+                  <img class="swiper-features-image" src="./images/features-slide-5.jpg" width="320" height="220" alt="Застосування слайд 5" />
                 </div>
               </div>
             </div>
@@ -94,7 +96,7 @@
         </section>
 
         <section class="section" id="products">
-          <div class="content-container">
+          <div class="content-container" data-source-container>
             <h2 class="title products-title">ПРОДУКЦІЯ</h2>
             <ul class="products-list slim">
               <li class="products-item">
@@ -129,7 +131,13 @@
               </li>
             </ul>
             <div class="products-video">
-              <img class="products-video-source" src="./images/product-video-1200x675.jpg" width="1200" height="675" alt="Відеоогляд продукції" />
+              <iframe
+                src="https://www.youtube.com/embed/9J2h7UlrU4U"
+                title="Кріплення Fitrub - переваги"
+                style="width: 100%; height: 100%; border: 0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
             </div>
           </div>
         </section>
@@ -145,7 +153,14 @@
                       <img class="partners-shopcar-logo" src="./images/logo-shopcar.png" width="98" height="98" alt="Логотип ShopCar" />
                       <div class="partners-shopcar-info">
                         <h3 class="partners-shopcar-name">ShopCar</h3>
-                        <p class="partners-shopcar-description">Мережа Магазинів Автозапчастин</p>
+                        <p class="partners-shopcar-description">Мережа магазинів автозапчастин</p>
+                      </div>
+                    </a>
+                    <a class="partners-link" href="http://pride.parts/">
+                      <img class="partners-shopcar-logo" src="./images/logo-prideparts.png" width="300" height="70" alt="Логотип PrideParts" />
+                      <div class="partners-shopcar-info">
+                        <h3 class="partners-shopcar-name">PrideParts</h3>
+                        <p class="partners-shopcar-description">Продаж автозапчастин</p>
                       </div>
                     </a>
                   </li>
@@ -153,8 +168,8 @@
               </div>
               <div class="partners-map">
                 <iframe
-                  title="Карта партнерів"
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2573.8232702479154!2d23.94256261530445!3d49.82698673997225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473ae744fbf174e1%3A0xeda7aa539715fea3!2zU2hvcENhciAtINCQ0LLRgtC-0LfQsNC_0YfQsNGB0YLQuNC90Lg!5e0!3m2!1sru!2sua!4v1679167741537!5m2!1sru!2sua"
+                  title="Карта партнерів"
                   style="width: 100%; height: 100%; border: 0"
                   allowfullscreen=""
                   loading="lazy"
@@ -182,7 +197,7 @@
             <ul class="contacts-socials">
               <li class="contacts-socials-item">
                 <a class="contacts-socials-link" href="https://www.instagram.com/">
-                  <img class="contacts-socials-icon" src="./images/socials-instagram.png" width="50" height="50" alt="Посилання на Instagram" />
+                  <img class="contacts-socials-icon" src="./images/socials-instagram.png" width="52" height="52" alt="Посилання на Instagram" />
                 </a>
               </li>
               <li class="contacts-socials-item">
@@ -204,6 +219,7 @@
 
     <div class="backdrop" data-modal>
       <div class="swiper swiper-products">
+        <button class="swiper-button-close" type="button" data-modal-close></button>
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <img class="slide-image" src="./images/product-slide-1.jpg" width="950" height="530" alt="Кріплення тип 1" />
@@ -338,7 +354,9 @@
       </div>
     </div>
 
-    <script type="module" src="./js/swipers.js"></script>
+    <script type="module" src="./js/mobile-menu.js"></script>
     <script type="module" src="./js/modal-window.js"></script>
+    <script type="module" src="./js/sliders-swiper.js"></script>
+    <script src="./js/body-scroll-lock.js"></script>
   </body>
 </html>
