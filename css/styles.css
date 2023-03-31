@@ -76,14 +76,14 @@ img {
     min-width: 1200px;
     width: 100%;
     background-image: url(../images/bg-top-1600x1600.png), url(../images/bg-bottom-1600x1600.png);
-    background-position: top -830px center, bottom -750px center;
+    background-position: top -830px center, bottom -760px center;
   }
 }
 
 @media (min-width: 1600px) {
   .body-container {
     width: 1600px;
-    background-position: top -740px center, bottom -740px center;
+    background-position: top -740px center, bottom -755px center;
   }
 }
 
@@ -596,6 +596,7 @@ img {
   .section#products {
     padding-top: 64px;
     padding-bottom: 27px;
+    scroll-margin-top: 80px;
   }
 }
 
@@ -603,7 +604,7 @@ img {
   .section#products {
     padding-top: 80px;
     padding-bottom: 30px;
-    scroll-margin-top: 110px;
+    scroll-margin-top: 70px;
   }
 }
 
