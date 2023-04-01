@@ -201,10 +201,10 @@ img {
 .button {
   display: inline-block;
   border: none;
-  cursor: pointer;
   color: #ffffff;
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), #b62e2c;
   transition: background var(--smooth-interface), color var(--smooth-interface);
+  cursor: pointer;
 }
 
 .button:hover,
@@ -226,7 +226,7 @@ img {
   width: inherit;
 }
 
-.menubar {
+.menu-container {
   background-color: #001427;
   opacity: 0.9;
 }
@@ -283,6 +283,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 20px;
 }
 
 @media (min-width: 768px) {
@@ -347,23 +348,17 @@ img {
   height: 300px;
 }
 
-.mobile-menu-logo {
-  width: auto;
-  height: auto;
-  padding: 20px;
-}
-
 .mobile-menu-toggle {
-  width: 90px;
-  height: 90px;
-  padding: 20px;
-  border: none;
-  cursor: pointer;
+  width: 48px;
+  height: 48px;
+  border: 1px solid #505050;
+  border-radius: 5px;
 
   background-color: transparent;
   background-image: url(../images/btn-menu-open.svg);
   background-position: center;
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 .mobile-menu-toggle.is-open {
@@ -1092,20 +1087,18 @@ img {
   top: 0px;
   right: 0px;
 
-  width: 90px;
-  height: 90px;
-  padding: 20px;
+  width: 50px;
+  height: 50px;
+  padding: 40px;
   border: none;
-  cursor: pointer;
 
   background-color: transparent;
-  background-image: url(../images/btn-modal-close.svg);
+  background-image: url(../images/btn-slider-close.svg);
   background-position: center;
   background-repeat: no-repeat;
 
-  color: #808080;
-  color: #616161;
-  color: #626262;
+  outline: none;
+  cursor: pointer;
 }
 
 .swiper-button-close:active {
@@ -1127,20 +1120,21 @@ img {
 .swiper-products .swiper-button-prev,
 .swiper-products .swiper-button-next {
   top: 300px;
-  width: 18px;
-  height: 40px;
-  margin: 0 20px;
-  background-size: contain;
+  width: 50px;
+  height: 50px;
+  padding: 50px 0;
+  background-position: center;
   background-repeat: no-repeat;
   outline: none;
-}
+  cursor: pointer;
+ }
 
 .swiper-products .swiper-button-prev {
-  background-image: url('../images/btn-slider-prev.png');
+  background-image: url('../images/btn-slider-prev.svg');
 }
 
 .swiper-products .swiper-button-next {
-  background-image: url('../images/btn-slider-next.png');
+  background-image: url('../images/btn-slider-next.svg');
 }
 
 .swiper-products .swiper-button-prev:after,
