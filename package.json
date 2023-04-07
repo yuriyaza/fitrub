@@ -1,18 +1,16 @@
 {
   "name": "fitrub",
-  "version": "1.0.0",
-  "description": "",
-  "homepage": "https://yuriyaza.github.io/fitrub",
-  "scripts": {
-    "start": "echo \"No script specified\" && exit 1",
-    "test": "echo \"No test specified\" && exit 1"
-  },
+  "version": "1.0.1",
+  "author": "Yuriy Aza <yuriy.aza@gmail.com>",
+  "license": "ISC",
+  "homepage": "https://yuriyaza.github.io/fitrub/",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/yuriyaza/fitrub.git"
   },
-  "author": "Yuriy Aza <yuriy.aza@gmail.com>",
-  "license": "ISC",
+  "scripts": {
+    "start": "echo \"No script specified\" && exit 1"
+  },
   "bugs": {
     "url": "https://github.com/yuriyaza/fitrub/issues"
   },
