@@ -38,12 +38,13 @@ const swiperProducts = new Swiper('.swiper-products', {
   },
 });
 
-const productsListEl = document.querySelector('.products-list');
+const productsListEl = document.querySelector('[data-modal-open]');
 productsListEl.addEventListener('click', setProductsSlideNumber);
 
 function setProductsSlideNumber(event) {
-  if (event.target.nodeName === 'IMG') {
-    const slideNumber = Number(event.target.dataset.slide) - 1;
-    swiperProducts.slideToLoop(slideNumber, 0);
+  if (event.target.nodeName !== 'IMG') {
+    return;
   }
+  const slideNumber = Number(event.target.dataset.slide) - 1;
+  swiperProducts.slideToLoop(slideNumber, 0);
 }

@@ -125,34 +125,34 @@
         <section class="section" id="products">
           <div class="content-container" data-source-container>
             <h2 class="title products-title">ПРОДУКЦІЯ</h2>
-            <ul class="mobile-container products-list">
+            <ul class="mobile-container products-list" data-modal-open>
               <li class="products-item">
-                <a class="products-link" href="" data-modal-open>
+                <a class="products-link" href="">
                   <img class="products-image" src="./images/product-card-01.jpg" width="260" height="218" alt="Кріплення тип 1" data-slide="1" />
                 </a>
               </li>
               <li class="products-item">
-                <a class="products-link" href="" data-modal-open>
+                <a class="products-link" href="">
                   <img class="products-image" src="./images/product-card-02.jpg" width="260" height="218" alt="Кріплення тип 2" data-slide="2" />
                 </a>
               </li>
               <li class="products-item">
-                <a class="products-link" href="" data-modal-open>
+                <a class="products-link" href="">
                   <img class="products-image" src="./images/product-card-03.jpg" width="260" height="218" alt="Кріплення тип 3" data-slide="3" />
                 </a>
               </li>
               <li class="products-item">
-                <a class="products-link" href="" data-modal-open>
+                <a class="products-link" href="">
                   <img class="products-image" src="./images/product-card-04.jpg" width="260" height="218" alt="Кріплення тип 4" data-slide="4" />
                 </a>
               </li>
               <li class="products-item">
-                <a class="products-link" href="" data-modal-open>
+                <a class="products-link" href="">
                   <img class="products-image" src="./images/product-card-05.jpg" width="260" height="218" alt="Кріплення тип 5" data-slide="5" />
                 </a>
               </li>
               <li class="products-item">
-                <a class="products-link" href="" data-modal-open>
+                <a class="products-link" href="">
                   <img class="products-image" src="./images/product-card-06.jpg" width="260" height="218" alt="Кріплення тип 6" data-slide="6" />
                 </a>
               </li>
@@ -177,17 +177,17 @@
                 <ul class="partners-list">
                   <li class="partners-item">
                     <a class="partners-link" href="https://shopcar.ua/">
-                      <img class="partners-shopcar-logo" src="./images/logo-shopcar.png" width="60" height="60" alt="Логотип ShopCar" />
-                      <div class="partners-shopcar-info">
-                        <h3 class="partners-shopcar-name">ShopCar</h3>
-                        <p class="partners-shopcar-description">Мережа магазинів автозапчастин</p>
+                      <img class="partners-shop-logo" src="./images/logo-shopcar.png" width="60" height="60" alt="Логотип ShopCar" />
+                      <div class="partners-shop-info">
+                        <h3 class="partners-shop-name">ShopCar</h3>
+                        <p class="partners-shop-description">Мережа магазинів автозапчастин</p>
                       </div>
                     </a>
                     <a class="partners-link" href="http://pride.parts/">
-                      <img class="partners-shopcar-logo" src="./images/logo-prideparts.png" width="60" height="60" alt="Логотип PrideParts" />
-                      <div class="partners-shopcar-info">
-                        <h3 class="partners-shopcar-name">PrideParts</h3>
-                        <p class="partners-shopcar-description">Продаж автозапчастин</p>
+                      <img class="partners-shop-logo" src="./images/logo-prideparts.png" width="60" height="60" alt="Логотип PrideParts" />
+                      <div class="partners-shop-info">
+                        <h3 class="partners-shop-name">PrideParts</h3>
+                        <p class="partners-shop-description">Продаж автозапчастин</p>
                       </div>
                     </a>
                     <!-- 
@@ -254,7 +254,7 @@
     </div>
 
     <div class="backdrop" data-modal>
-      <div class="swiper swiper-products">
+      <div class="swiper swiper-products" data-scroll-lock-scrollable>
         <div class="swiper-button-close-wrapper">
           <button class="swiper-button-close" type="button" data-modal-close></button>
         </div>
@@ -412,9 +412,10 @@
       </div>
     </div>
 
-    <script src="./js/mobile-menu.js"></script>
-    <script src="./js/modal-window.js"></script>
-    <script type="module" src="./js/sliders-swiper.js"></script>
-    <script src="./js/body-scroll-lock.js"></script>
+    <script defer src="./js/mobile-menu.js"></script>
+    <script defer src="./js/scroll-lock.min.js"></script>
+    <script defer src="./js/modal-window.js"></script>
+    <script defer src="./js/swiper-bundle.esm.browser.min.js" type="module"></script>
+    <script defer src="./js/sliders-init.js" type="module"></script>
   </body>
 </html>
