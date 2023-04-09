@@ -6,20 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Універсальні кріплення FITRUB</title>
-    <meta name="description" content="Гумові кріплення для зручного та швидкого монтажу, закріплення різних предметів до будь-якої поверхні" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800&display=swap" rel="stylesheet" />
+    <meta
+      name="description"
+      content="Гумові кріплення для зручного та швидкого монтажу, закріплення автомобільних аксесуарів, спортивного інвентарю, садових інструментів, знарядь для рибалки, тросів, вогнегасників, вудок, ручного інструменту та іншого обладнання. Підходять, для всього, що має бути закріпленим та одночасно легко зніматись."
+    />
 
     <link rel="stylesheet" href="./css/modern-normalize.min.css" />
     <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/styles.css" />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet" />
+
+    <link rel="manifest" href="./manifest.json" />
     <link rel="apple-touch-icon" sizes="180x180" href="./icons/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="./icons/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="./icons/favicon-16x16.png" />
-    <link rel="manifest" href="./icons/site.webmanifest" />
     <link rel="mask-icon" href="./icons/safari-pinned-tab.svg" color="#b62f2c" />
     <link rel="shortcut icon" href="./icons/favicon.ico" />
     <meta name="msapplication-TileColor" content="#eaeaea" />
@@ -37,26 +40,26 @@
 
   <body>
     <div class="body-container">
-      <header class="header" id="navigation">
+      <header class="header" id="navigation" data-scroll-lock-fill-gap>
         <div class="menu-container">
           <div class="content-container">
             <nav class="desktop-menubar">
-              <img class="desktop-menu-logo" src="./images/logo-fitrub.png" width="110" height="50" alt="Логотип Fitrub" />
+              <img class="desktop-menu-logo" src="./images/logo-fitrub-min.png" width="110" height="50" alt="Логотип Fitrub" />
               <a class="desktop-menu-link" href="#features">Головна</a>
               <a class="desktop-menu-link" href="#products">Продукція</a>
               <a class="desktop-menu-link" href="#contacts">Контакти</a>
-              <a class="button desktop-menu-button" href="https://www.olx.ua/">Купити</a>
+              <a class="button desktop-menu-button-buy" href="https://www.olx.ua/">Купити</a>
             </nav>
           </div>
           <div class="mobile-menubar">
-            <img class="mobile-menu-logo" src="./images/logo-fitrub.png" width="110" height="50" alt="Логотип Fitrub" />
-            <button class="mobile-menu-toggle" type="button" data-menu-open></button>
+            <img class="mobile-menu-logo" src="./images/logo-fitrub-min.png" width="110" height="50" alt="Логотип Fitrub" />
+            <button class="mobile-menu-toggle" type="button" aria-label="Меню" data-menu-button></button>
           </div>
         </div>
         <div class="mobile-menu-backdrop" data-menu-container>
           <nav class="mobile-menu" data-menu>
             <div class="mobile-menu-wrapper">
-              <a class="button mobile-menu-button" href="https://www.olx.ua/">Купити</a>
+              <a class="button mobile-menu-button-buy" href="https://www.olx.ua/">Купити</a>
               <a class="mobile-menu-link" href="#features">Головна</a>
               <a class="mobile-menu-link" href="#products">Продукція</a>
               <a class="mobile-menu-link" href="#contacts">Контакти</a>
@@ -76,46 +79,46 @@
             <div class="swiper swiper-features">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <img class="swiper-features-image" src="./images/features-slide-01.jpg" width="320" height="220" alt="Застосування слайд 1" />
+                  <img class="swiper-features-image" src="./images/fitrub-features-min-01.jpg" width="320" height="220" alt="Переваги слайд 1" />
                 </div>
                 <div class="swiper-slide">
-                  <img class="swiper-features-image" src="./images/features-slide-02.jpg" width="320" height="220" alt="Застосування слайд 2" />
+                  <img class="swiper-features-image" src="./images/fitrub-features-min-02.jpg" width="320" height="220" alt="Переваги слайд 2" />
                 </div>
                 <div class="swiper-slide">
-                  <img class="swiper-features-image" src="./images/features-slide-03.jpg" width="320" height="220" alt="Застосування слайд 3" />
+                  <img class="swiper-features-image" src="./images/fitrub-features-min-03.jpg" width="320" height="220" alt="Переваги слайд 3" />
                 </div>
                 <div class="swiper-slide">
-                  <img class="swiper-features-image" src="./images/features-slide-04.jpg" width="320" height="220" alt="Застосування слайд 4" />
+                  <img class="swiper-features-image" src="./images/fitrub-features-min-04.jpg" width="320" height="220" alt="Переваги слайд 4" />
                 </div>
                 <div class="swiper-slide">
-                  <img class="swiper-features-image" src="./images/features-slide-05.jpg" width="320" height="220" alt="Застосування слайд 5" />
+                  <img class="swiper-features-image" src="./images/fitrub-features-min-05.jpg" width="320" height="220" alt="Переваги слайд 5" />
                 </div>
                 <div class="swiper-slide">
-                  <img class="swiper-features-image" src="./images/features-slide-06.jpg" width="320" height="220" alt="Застосування слайд 6" />
+                  <img class="swiper-features-image" src="./images/fitrub-features-min-06.jpg" width="320" height="220" alt="Переваги слайд 6" />
                 </div>
                 <div class="swiper-slide">
-                  <img class="swiper-features-image" src="./images/features-slide-07.jpg" width="320" height="220" alt="Застосування слайд 7" />
+                  <img class="swiper-features-image" src="./images/fitrub-features-min-07.jpg" width="320" height="220" alt="Переваги слайд 7" />
                 </div>
                 <div class="swiper-slide">
-                  <img class="swiper-features-image" src="./images/features-slide-08.jpg" width="320" height="220" alt="Застосування слайд 8" />
+                  <img class="swiper-features-image" src="./images/fitrub-features-min-08.jpg" width="320" height="220" alt="Переваги слайд 8" />
                 </div>
                 <div class="swiper-slide">
-                  <img class="swiper-features-image" src="./images/features-slide-09.jpg" width="320" height="220" alt="Застосування слайд 9" />
+                  <img class="swiper-features-image" src="./images/fitrub-features-min-09.jpg" width="320" height="220" alt="Переваги слайд 9" />
                 </div>
                 <div class="swiper-slide">
-                  <img class="swiper-features-image" src="./images/features-slide-10.jpg" width="320" height="220" alt="Застосування слайд 10" />
+                  <img class="swiper-features-image" src="./images/fitrub-features-min-10.jpg" width="320" height="220" alt="Переваги слайд 10" />
                 </div>
                 <div class="swiper-slide">
-                  <img class="swiper-features-image" src="./images/features-slide-11.jpg" width="320" height="220" alt="Застосування слайд 11" />
+                  <img class="swiper-features-image" src="./images/fitrub-features-min-11.jpg" width="320" height="220" alt="Переваги слайд 11" />
                 </div>
                 <div class="swiper-slide">
-                  <img class="swiper-features-image" src="./images/features-slide-12.jpg" width="320" height="220" alt="Застосування слайд 12" />
+                  <img class="swiper-features-image" src="./images/fitrub-features-min-12.jpg" width="320" height="220" alt="Переваги слайд 12" />
                 </div>
                 <div class="swiper-slide">
-                  <img class="swiper-features-image" src="./images/features-slide-13.jpg" width="320" height="220" alt="Застосування слайд 13" />
+                  <img class="swiper-features-image" src="./images/fitrub-features-min-13.jpg" width="320" height="220" alt="Переваги слайд 13" />
                 </div>
                 <div class="swiper-slide">
-                  <img class="swiper-features-image" src="./images/features-slide-14.jpg" width="320" height="220" alt="Застосування слайд 14" />
+                  <img class="swiper-features-image" src="./images/fitrub-features-min-14.jpg" width="320" height="220" alt="Переваги слайд 14" />
                 </div>
               </div>
             </div>
@@ -127,33 +130,33 @@
             <h2 class="title products-title">ПРОДУКЦІЯ</h2>
             <ul class="mobile-container products-list" data-modal-open>
               <li class="products-item">
-                <a class="products-link" href="">
-                  <img class="products-image" src="./images/product-card-01.jpg" width="260" height="218" alt="Кріплення тип 1" data-slide="1" />
+                <a class="products-link" href="#products" aria-label="Характеристики кріплення Fitrub тип 1">
+                  <img class="products-image" src="./images/fitrub-product-card-min-01.jpg" width="260" height="218" alt="Кріплення тип 1" data-slide="1" />
                 </a>
               </li>
               <li class="products-item">
-                <a class="products-link" href="">
-                  <img class="products-image" src="./images/product-card-02.jpg" width="260" height="218" alt="Кріплення тип 2" data-slide="2" />
+                <a class="products-link" href="#products" aria-label="Характеристики кріплення Fitrub тип 2">
+                  <img class="products-image" src="./images/fitrub-product-card-min-02.jpg" width="260" height="218" alt="Кріплення тип 2" data-slide="2" />
                 </a>
               </li>
               <li class="products-item">
-                <a class="products-link" href="">
-                  <img class="products-image" src="./images/product-card-03.jpg" width="260" height="218" alt="Кріплення тип 3" data-slide="3" />
+                <a class="products-link" href="#products" aria-label="Характеристики кріплення Fitrub тип 3">
+                  <img class="products-image" src="./images/fitrub-product-card-min-03.jpg" width="260" height="218" alt="Кріплення тип 3" data-slide="3" />
                 </a>
               </li>
               <li class="products-item">
-                <a class="products-link" href="">
-                  <img class="products-image" src="./images/product-card-04.jpg" width="260" height="218" alt="Кріплення тип 4" data-slide="4" />
+                <a class="products-link" href="#products" aria-label="Характеристики кріплення Fitrub тип 4">
+                  <img class="products-image" src="./images/fitrub-product-card-min-04.jpg" width="260" height="218" alt="Кріплення тип 4" data-slide="4" />
                 </a>
               </li>
               <li class="products-item">
-                <a class="products-link" href="">
-                  <img class="products-image" src="./images/product-card-05.jpg" width="260" height="218" alt="Кріплення тип 5" data-slide="5" />
+                <a class="products-link" href="#products" aria-label="Характеристики кріплення Fitrub тип 5">
+                  <img class="products-image" src="./images/fitrub-product-card-min-05.jpg" width="260" height="218" alt="Кріплення тип 5" data-slide="5" />
                 </a>
               </li>
               <li class="products-item">
-                <a class="products-link" href="">
-                  <img class="products-image" src="./images/product-card-06.jpg" width="260" height="218" alt="Кріплення тип 6" data-slide="6" />
+                <a class="products-link" href="#products" aria-label="Характеристики кріплення Fitrub тип 6">
+                  <img class="products-image" src="./images/fitrub-product-card-min-06.jpg" width="260" height="218" alt="Кріплення тип 6" data-slide="6" />
                 </a>
               </li>
             </ul>
@@ -176,26 +179,26 @@
                 <h2 class="title partners-title">НАШІ ПАРТНЕРИ</h2>
                 <ul class="partners-list">
                   <li class="partners-item">
-                    <a class="partners-link" href="https://shopcar.ua/">
-                      <img class="partners-shop-logo" src="./images/logo-shopcar.png" width="60" height="60" alt="Логотип ShopCar" />
+                    <a class="partners-link" href="https://shopcar.ua/" aria-label="Посилання на сайт ShopCar">
+                      <img class="partners-shop-logo" src="./images/logo-shopcar-min.png" width="60" height="60" alt="Логотип ShopCar" />
                       <div class="partners-shop-info">
                         <h3 class="partners-shop-name">ShopCar</h3>
                         <p class="partners-shop-description">Мережа магазинів автозапчастин</p>
                       </div>
                     </a>
-                    <a class="partners-link" href="http://pride.parts/">
-                      <img class="partners-shop-logo" src="./images/logo-prideparts.png" width="60" height="60" alt="Логотип PrideParts" />
+                    <a class="partners-link" href="http://pride.parts/" aria-label="Посилання на сайтPrideParts">
+                      <img class="partners-shop-logo" src="./images/logo-prideparts-min.png" width="60" height="60" alt="Логотип PrideParts" />
                       <div class="partners-shop-info">
                         <h3 class="partners-shop-name">PrideParts</h3>
                         <p class="partners-shop-description">Продаж автозапчастин</p>
                       </div>
                     </a>
-                    <!-- 
-                    <a class="partners-link" href="http://сайта_партнера/">
-                      <img class="partners-shopcar-logo" src="./images/логотип_партнера.png" width="300" height="70" alt="Логотип" />
+                    <!--                     
+                    <a class="partners-link" href="http://@сайта_партнера/" aria-label="Посилання на сайт @назва_партнера">
+                      <img class="partners-shopcar-logo" src="./images/@логотип_партнера.png" width="60" height="60" alt="Логотип @назва_партнера" />
                       <div class="partners-shopcar-info">
-                        <h3 class="partners-shopcar-name">назва_партнера</h3>
-                        <p class="partners-shopcar-description">опис_партнера</p>
+                        <h3 class="partners-shopcar-name">@назва_партнера</h3>
+                        <p class="partners-shopcar-description">@опис_партнера</p>
                       </div>
                     </a>
                     -->
@@ -232,18 +235,18 @@
             </div>
             <ul class="contacts-socials">
               <li class="contacts-socials-item">
-                <a class="contacts-socials-link" href="https://www.instagram.com/">
-                  <img class="contacts-socials-icon" src="./images/socials-instagram.png" width="52" height="52" alt="Посилання на Instagram" />
+                <a class="contacts-socials-link" href="https://www.instagram.com/" aria-label="Посилання на сторінку Instagram">
+                  <img class="contacts-socials-icon" src="./images/socials-instagram-min.png" width="52" height="52" alt="Логотип Instagram" />
                 </a>
               </li>
               <li class="contacts-socials-item">
-                <a class="contacts-socials-link" href="https://www.facebook.com/">
-                  <img class="contacts-socials-icon" src="./images/socials-facebook.png" width="50" height="50" alt="Посилання на Facebook" />
+                <a class="contacts-socials-link" href="https://www.facebook.com/" aria-label="Посилання на сторінку Facebook">
+                  <img class="contacts-socials-icon" src="./images/socials-facebook-min.png" width="50" height="50" alt="Логотип Facebook" />
                 </a>
               </li>
               <li class="contacts-socials-item">
-                <a class="contacts-socials-link" href="https://www.youtube.com/">
-                  <img class="contacts-socials-icon" src="./images/socials-youtube.png" width="52" height="36" alt="Посилання на YouTube" />
+                <a class="contacts-socials-link" href="https://www.youtube.com/" aria-label="Посилання на сторінку YouTube">
+                  <img class="contacts-socials-icon" src="./images/socials-youtube-min.png" width="52" height="36" alt="Логотип YouTube" />
                 </a>
               </li>
             </ul>
@@ -266,7 +269,7 @@
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <div class="slide-image-wrapper">
-              <img class="slide-image" src="./images/product-slide-01.jpg" width="320" height="179" alt="Кріплення тип 1" />
+              <img class="slide-image" src="./images/fitrub-specifications-min-01.jpg" width="320" height="179" alt="Кріплення тип 1" />
             </div>
             <div class="slide-title-wrapper">
               <h2 class="slide-title">Кріплення гумове універсальне 22&#8209;31&nbsp;мм</h2>
@@ -291,7 +294,7 @@
           </div>
           <div class="swiper-slide">
             <div class="slide-image-wrapper">
-              <img class="slide-image" src="./images/product-slide-02.jpg" width="320" height="179" alt="Кріплення тип 2" />
+              <img class="slide-image" src="./images/fitrub-specifications-min-02.jpg" width="320" height="179" alt="Кріплення тип 2" />
             </div>
             <div class="slide-title-wrapper">
               <h2 class="slide-title">Кріплення гумове універсальне 32&#8209;45&nbsp;мм</h2>
@@ -316,7 +319,7 @@
           </div>
           <div class="swiper-slide">
             <div class="slide-image-wrapper">
-              <img class="slide-image" src="./images/product-slide-03.jpg" width="320" height="179" alt="Кріплення тип 3" />
+              <img class="slide-image" src="./images/fitrub-specifications-min-03.jpg" width="320" height="179" alt="Кріплення тип 3" />
             </div>
             <div class="slide-title-wrapper">
               <h2 class="slide-title">Кріплення гумове універсальне 40&#8209;60&nbsp;мм</h2>
@@ -341,7 +344,7 @@
           </div>
           <div class="swiper-slide">
             <div class="slide-image-wrapper">
-              <img class="slide-image" src="./images/product-slide-04.jpg" width="320" height="179" alt="Кріплення тип 4" />
+              <img class="slide-image" src="./images/fitrub-specifications-min-04.jpg" width="320" height="179" alt="Кріплення тип 4" />
             </div>
             <div class="slide-title-wrapper">
               <h2 class="slide-title">Кріплення гумове універсальне 60&#8209;87&nbsp;мм</h2>
@@ -366,7 +369,7 @@
           </div>
           <div class="swiper-slide">
             <div class="slide-image-wrapper">
-              <img class="slide-image" src="./images/product-slide-05.jpg" width="320" height="179" alt="Кріплення тип 5" />
+              <img class="slide-image" src="./images/fitrub-specifications-min-05.jpg" width="320" height="179" alt="Кріплення тип 5" />
             </div>
             <div class="slide-title-wrapper">
               <h2 class="slide-title">Кріплення універсальне 45&#8209;50&nbsp;мм</h2>
@@ -388,7 +391,7 @@
           </div>
           <div class="swiper-slide">
             <div class="slide-image-wrapper">
-              <img class="slide-image" src="./images/product-slide-06.jpg" width="320" height="179" alt="Кріплення тип 6" />
+              <img class="slide-image" src="./images/fitrub-specifications-min-06.jpg" width="320" height="179" alt="Кріплення тип 6" />
             </div>
             <div class="slide-title-wrapper">
               <h2 class="slide-title">Кріплення універсальне 60&#8209;65&nbsp;мм</h2>
@@ -412,10 +415,10 @@
       </div>
     </div>
 
-    <script defer src="./js/mobile-menu.js"></script>
-    <script defer src="./js/scroll-lock.min.js"></script>
-    <script defer src="./js/modal-window.js"></script>
-    <script defer src="./js/swiper-bundle.esm.browser.min.js" type="module"></script>
-    <script defer src="./js/sliders-init.js" type="module"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/swiper-bundle.esm.browser.min.js" type="module"></script>
+    <script src="./js/features.js" type="module"></script>
+    <script src="./js/scroll-lock.min.js"></script>
+    <script src="./js/modal.js" type="module"></script>
   </body>
 </html>
