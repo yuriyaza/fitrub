@@ -10,7 +10,7 @@ html {
 
 body {
   font-family: 'Inter', sans-serif;
-  font-size: 22px;
+  font-size: 12px;
   line-height: 1.2;
   color: #000000;
   background-color: #f3f3f3;
@@ -38,8 +38,6 @@ img {
   display: block;
 }
 
-/* ==================== General classes ==================== */
-
 .body-container {
   min-width: 320px;
   width: 100%;
@@ -48,7 +46,7 @@ img {
   margin: 0 auto;
 
   background-color: #ffffff;
-  background-image: url(../images/bg-top-460x1600.png), url(../images/bg-bottom-460x1600.png);
+  background-image: url(../images/bg-top-min-460x1600.png), url(../images/bg-bottom-min-460x1600.png);
   background-position: top -885px center, bottom -1045px center;
   background-repeat: no-repeat;
 }
@@ -57,7 +55,7 @@ img {
   .body-container {
     min-width: 460px;
     width: 100%;
-    background-image: url(../images/bg-top-768x1600.png), url(../images/bg-bottom-768x1600.png);
+    background-image: url(../images/bg-top-min-768x1600.png), url(../images/bg-bottom-min-768x1600.png);
     background-position: top -792px center, bottom -985px center;
   }
 }
@@ -66,7 +64,7 @@ img {
   .body-container {
     min-width: 768px;
     width: 100%;
-    background-image: url(../images/bg-top-1200x1600.png), url(../images/bg-bottom-1200x1600.png);
+    background-image: url(../images/bg-top-min-1200x1600.png), url(../images/bg-bottom-min-1200x1600.png);
     background-position: top -538px center, bottom -892px center;
   }
 }
@@ -75,7 +73,7 @@ img {
   .body-container {
     min-width: 1200px;
     width: 100%;
-    background-image: url(../images/bg-top-1600x1600.png), url(../images/bg-bottom-1600x1600.png);
+    background-image: url(../images/bg-top-min-1600x1600.png), url(../images/bg-bottom-min-1600x1600.png);
     background-position: top -830px center, bottom -780px center;
   }
 }
@@ -84,7 +82,7 @@ img {
   .body-container {
     min-width: 1600px;
     width: 100%;
-    background-image: url(../images/bg-top-1980x1600.png), url(../images/bg-bottom-1980x1600.png);
+    background-image: url(../images/bg-top-min-1980x1600.png), url(../images/bg-bottom-min-1980x1600.png);
     background-position: top -670px center, bottom -720px center;
   }
 }
@@ -213,8 +211,6 @@ img {
   transform: translate(0, 1px);
 }
 
-/* ==================== Header and menu ==================== */
-
 .header#navigation {
   position: fixed;
   z-index: 10;
@@ -260,7 +256,7 @@ img {
   color: #c3c3c3;
 }
 
-.desktop-menu-button {
+.desktop-menu-button-buy {
   padding: 12px 17px;
   font-weight: 700;
   font-size: 19px;
@@ -268,7 +264,7 @@ img {
 }
 
 @media (min-width: 1200px) {
-  .desktop-menu-button {
+  .desktop-menu-button-buy {
     padding: 10px 38px;
     font-weight: 700;
     font-size: 20px;
@@ -319,7 +315,7 @@ img {
   overflow-y: scroll;
   padding: 25px 25px;
 
-  background-image: url(../images/bg-menu-460x1600.png);
+  background-image: url(../images/bg-menu-min-460x1600.png);
   background-position: bottom center;
   background-repeat: no-repeat;
   transition: transform 400ms;
@@ -328,7 +324,7 @@ img {
 @media (min-width: 460px) {
   .mobile-menu {
     padding: 35px 40px;
-    background-image: url(../images/bg-menu-768x1600.png);
+    background-image: url(../images/bg-menu-min-768x1600.png);
   }
 }
 
@@ -365,7 +361,7 @@ img {
   transform: scale(0.95);
 }
 
-.mobile-menu-button {
+.mobile-menu-button-buy {
   padding: 10px 27px;
   margin-bottom: 20px;
   font-weight: 700;
@@ -374,8 +370,8 @@ img {
   border-radius: 8px;
 }
 
-.mobile-menu-button:hover,
-.mobile-menu-button:focus {
+.mobile-menu-button-buy:hover,
+.mobile-menu-button-buy:focus {
   background-color: #8f0303;
 }
 
@@ -384,8 +380,6 @@ img {
   font-size: 26px;
   color: #ffffff;
 }
-
-/* ==================== Features section ==================== */
 
 .section#features {
   padding-top: 90px;
@@ -572,8 +566,6 @@ img {
   height: 100%;
 }
 
-/* ==================== Products section ==================== */
-
 .section#products {
   padding-top: 50px;
   padding-bottom: 20px;
@@ -712,8 +704,6 @@ img {
   width: 100%;
   height: 100%;
 }
-
-/* ==================== Partners section ==================== */
 
 .section#partners {
   padding-top: 20px;
@@ -903,10 +893,8 @@ img {
 @media (min-width: 1200px) {
   .partners-button {
     padding: 14px 70px;
-   }
+  }
 }
-
-/* ==================== Footer and contacts ==================== */
 
 .footer#contacts {
   padding-top: 22px;
@@ -1077,7 +1065,6 @@ img {
 }
 
 .contacts-copyright {
-  font-weight: 300;
   font-size: 13px;
 }
 
@@ -1086,8 +1073,6 @@ img {
     font-size: 16px;
   }
 }
-
-/* ==================== Modal window ==================== */
 
 .backdrop {
   position: fixed;
@@ -1109,22 +1094,11 @@ img {
   transition: visibility 400ms, opacity 400ms, scale 400ms;
 }
 
-.is-visible {
+.backdrop.is-visible {
   visibility: visible;
   opacity: 1;
   scale: 1;
 }
-
-.disable-scroll {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-}
-
-/* ==================== Swiper and slides ==================== */
 
 .swiper-products {
   position: relative;
@@ -1320,11 +1294,8 @@ img {
 
 @media (min-width: 1600px) {
   .slide-image {
-    /* width: 600px; */
-    /* height: 335px; */
     width: 530px;
     height: 296px;
-  
   }
 }
 
@@ -1373,8 +1344,8 @@ img {
 
 @media (min-width: 1600px) {
   .slide-title {
-    height: 55px;
-    font-size: 26px;
+    height: 50px;
+    font-size: 27px;
   }
 }
 
