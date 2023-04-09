@@ -904,6 +904,12 @@ img {
   scroll-margin-top: 90px;
 }
 
+@media (min-width: 460px) {
+  .footer#contacts {
+    padding-bottom: 16px;
+  }
+}
+
 @media (min-width: 768px) {
   .footer#contacts {
     padding-top: 45px;
@@ -1234,7 +1240,7 @@ img {
 @media (min-width: 1600px) {
   .swiper-button-prev,
   .swiper-button-next {
-    top: 300px;
+    top: 260px;
   }
 }
 

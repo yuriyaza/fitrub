@@ -1,7 +1,7 @@
 {
     "name": "Універсальні кріплення FITRUB",
     "short_name": "FITRUB",
-    "start_url": "./index.html",
+    "start_url": "https://fitrub.com.ua/",
     "icons": [
         {
             "src": "./icons/android-chrome-192x192.png",
