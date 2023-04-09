@@ -18,6 +18,7 @@ const swiperProductsSettings = {
   },
   mousewheel: {
     eventsTarget: 'body',
+    invert: true,
   },
   keyboard: {
     enabled: true,
