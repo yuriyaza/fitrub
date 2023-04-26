@@ -168,27 +168,27 @@ img {
 .title::after {
   content: '';
   display: block;
-  width: 93px;
+  width: 90px;
   height: 5px;
   background-color: #b62e2c;
 }
 
 @media (min-width: 460px) {
   .title::after {
-    width: 102px;
+    width: 99px;
   }
 }
 
 @media (min-width: 1200px) {
   .title::after {
     height: 7px;
-    width: 115px;
+    width: 112px;
   }
 }
 
 @media (min-width: 1600px) {
   .title::after {
-    width: 128px;
+    width: 125px;
   }
 }
 
@@ -343,10 +343,11 @@ img {
 .mobile-menu-toggle {
   width: 48px;
   height: 48px;
-  border: 1px solid #505050;
-  border-radius: 5px;
 
-  background-color: transparent;
+  background-color: #001427;
+  opacity: 0.9;
+  border: none;
+
   background-image: url(../images/btn-menu-open.svg);
   background-position: center;
   background-repeat: no-repeat;
@@ -1173,7 +1174,14 @@ img {
 
 @media (min-width: 460px) {
   .swiper-button-close {
-    padding: 40px;
+    padding: 35px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .swiper-button-close {
+    padding: 32px;
+    border-radius: 10px;
   }
 }
 
@@ -1209,8 +1217,8 @@ img {
 }
 
 .swiper-pagination-bullet-active {
-  width: 12px;
-  height: 12px;
+  width: 11px;
+  height: 11px;
   background-color: #b62e2c;
 }
 
@@ -1232,7 +1240,7 @@ img {
 @media (min-width: 460px) {
   .swiper-button-prev,
   .swiper-button-next {
-    top: 370px;
+    top: 367px;
     width: 60px;
   }
 }
@@ -1240,7 +1248,8 @@ img {
 @media (min-width: 768px) {
   .swiper-button-prev,
   .swiper-button-next {
-    top: 350px;
+    top: 347px;
+    width: 55px;
   }
 }
 
@@ -1248,7 +1257,7 @@ img {
   .swiper-button-prev,
   .swiper-button-next {
     top: 220px;
-    width: 65px;
+    width: 53px;
   }
 }
 
