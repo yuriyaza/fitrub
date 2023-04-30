@@ -1181,7 +1181,7 @@ img {
 @media (min-width: 1200px) {
   .swiper-button-close {
     padding: 32px;
-    border-radius: 10px;
+    border-radius: 0 10px 0 0;
   }
 }
 
@@ -1216,9 +1216,14 @@ img {
   justify-content: center;
 }
 
+.swiper-pagination-bullet {
+  width: 6px;
+  height: 6px;
+}
+
 .swiper-pagination-bullet-active {
-  width: 11px;
-  height: 11px;
+  width: 8px;
+  height: 8px;
   background-color: #b62e2c;
 }
 
