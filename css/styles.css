@@ -38,6 +38,18 @@ img {
   display: block;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
 .body-container {
   min-width: 320px;
   width: 100%;
@@ -384,7 +396,7 @@ img {
 
 .section#features {
   padding-top: 90px;
-  padding-bottom: 50px;
+  padding-bottom: 60px;
   color: #ffffff;
 }
 
@@ -568,16 +580,16 @@ img {
 }
 
 .section#products {
-  padding-top: 50px;
-  padding-bottom: 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   text-align: center;
   scroll-margin-top: 75px;
 }
 
 @media (min-width: 768px) {
   .section#products {
-    padding-top: 64px;
-    padding-bottom: 27px;
+    padding-top: 55px;
+    padding-bottom: 55px;
     scroll-margin-top: 80px;
   }
 }
@@ -585,7 +597,7 @@ img {
 @media (min-width: 1200px) {
   .section#products {
     padding-top: 80px;
-    padding-bottom: 30px;
+    padding-bottom: 160px;
     scroll-margin-top: 70px;
   }
 }
@@ -594,7 +606,7 @@ img {
   .section#products {
     scroll-margin-top: 75px;
     padding-top: 80px;
-    padding-bottom: 30px;
+    padding-bottom: 160px;
   }
 }
 
@@ -707,14 +719,14 @@ img {
 }
 
 .section#partners {
-  padding-top: 20px;
-  padding-bottom: 22px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   text-align: center;
 }
 
 @media (min-width: 768px) {
   .section#partners {
-    padding-top: 27px;
+    padding-top: 45px;
     padding-bottom: 45px;
   }
 }
@@ -722,13 +734,14 @@ img {
 @media (min-width: 1200px) {
   .section#partners {
     padding-top: 30px;
-    padding-bottom: 45px;
+    padding-bottom: 30px;
   }
 }
 
 @media (min-width: 1600px) {
   .section#partners {
-    padding-bottom: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 }
 
